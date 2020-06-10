@@ -6,6 +6,7 @@ https://start.spring.io/actuator/info
 
 ## 子项列表
 - usage-spring spring用法
+    1. 迁移到 [spring-usage-examples](https://github.com/Soulballad/spring-usage-examples/tree/master)
 - usage-mybatis mybatis用法
 - usage-redis redis用法
 - usage-dubbo dubbo用法
