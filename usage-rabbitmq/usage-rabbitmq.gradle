@@ -1,0 +1,6 @@
+description = 'usage-rabbitmq'
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+
+}

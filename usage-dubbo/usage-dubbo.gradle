@@ -1,0 +1,6 @@
+description = 'usage-dubbo'
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+
+}

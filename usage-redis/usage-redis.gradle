@@ -1,0 +1,6 @@
+description = 'usage-redis'
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+
+}

@@ -1,0 +1,6 @@
+description = 'usage-zookeeper'
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+
+}

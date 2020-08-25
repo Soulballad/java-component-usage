@@ -1,0 +1,13 @@
+rootProject.name = 'java-component-usage'
+include(':usage-mybatis')
+include(':usage-redis')
+include(':usage-dubbo')
+include(':usage-zookeeper')
+include(':usage-netty')
+include(':usage-kafka')
+include(':usage-rabbitmq')
+include(':usage-arthas:arthas-demo')
+include(':usage-arthas')
+include(':usage-elasticsearch')
+include(':usage-pattern')
+project(':usage-arthas:arthas-demo').projectDir = file('usage-arthas/arthas-demo')

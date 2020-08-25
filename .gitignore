@@ -12,6 +12,10 @@
 **/mvnw.cmd
 **/mvnw
 **/HELP.md
+**/build/*
+.gradle
+/build
+/usage-*/build
 
 
 
