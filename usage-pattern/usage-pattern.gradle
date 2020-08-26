@@ -1,6 +1,2 @@
 description = 'usage-pattern'
 apply plugin: 'org.springframework.boot'
-
-dependencies {
-
-}
