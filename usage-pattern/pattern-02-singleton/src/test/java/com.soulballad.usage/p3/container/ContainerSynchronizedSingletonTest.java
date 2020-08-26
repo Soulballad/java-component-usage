@@ -17,7 +17,7 @@ public class ContainerSynchronizedSingletonTest {
                 @Override
                 public void handle() {
                     Object instance =
-                        ContainerSynchronizedSingleton.getInstance("com.gupao.pattern.singleton.container.TestClass");
+                        ContainerSynchronizedSingleton.getInstance("com.soulballad.usage.p3.container.TestClass");
                     System.out.println(System.currentTimeMillis() + ":" + instance);
                 }
             }, 10, 6);

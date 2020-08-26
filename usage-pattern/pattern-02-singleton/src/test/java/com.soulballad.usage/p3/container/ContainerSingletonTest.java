@@ -17,7 +17,7 @@ public class ContainerSingletonTest {
             ConcurrentExecutor.execute(new ConcurrentExecutor.RunHandler() {
                 @Override
                 public void handle() {
-                    Object instance = ContainerSingleton.getInstance("com.gupao.pattern.singleton.container.TestClass");
+                    Object instance = ContainerSingleton.getInstance("com.soulballad.usage.p3.container.TestClass");
                     System.out.println(System.currentTimeMillis()+":"+instance);
                 }
             }, 10, 6);
