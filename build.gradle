@@ -22,9 +22,12 @@ buildscript {
 
     repositories {
         mavenLocal()
-        maven {
-            url = uri('http://repo.maven.apache.org/maven2')
-        }
+        maven {url "http://maven.aliyun.com/nexus/content/groups/public/"}
+        maven {url "https://maven.aliyun.com/repository/central"}
+        maven {url "https://maven.aliyun.com/repository/jcenter"}
+        maven {url "https://maven.aliyun.com/repository/google"}
+        maven {url "http://mirrors.163.com/maven/#browse/browse/assets"}
+        maven { url = uri('http://repo.maven.apache.org/maven2') }
     }
 
     dependencies {
