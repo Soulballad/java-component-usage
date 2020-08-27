@@ -6,7 +6,7 @@ package com.soulballad.usage.p1.simple;
  * @email soda931vzr@163.com
  * @description
  */
-public class EmployeeB implements IEmployee{
+public class EmployeeB implements IEmployee {
 
     @Override
     public void work(String command) {

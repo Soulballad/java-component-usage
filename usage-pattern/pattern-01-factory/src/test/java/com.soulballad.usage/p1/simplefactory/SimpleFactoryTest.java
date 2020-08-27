@@ -1,6 +1,5 @@
 package com.soulballad.usage.p1.simplefactory;
 
-
 /**
  * @author Soulballad
  * @date 2019/3/7/0007 16:18

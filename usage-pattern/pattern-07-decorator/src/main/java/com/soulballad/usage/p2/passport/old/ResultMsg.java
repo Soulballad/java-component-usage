@@ -44,10 +44,6 @@ public class ResultMsg {
 
     @Override
     public String toString() {
-        return "ResultMsg{" +
-                "code=" + code +
-                ", msg='" + msg + '\'' +
-                ", data='" + data + '\'' +
-                '}';
+        return "ResultMsg{" + "code=" + code + ", msg='" + msg + '\'' + ", data='" + data + '\'' + '}';
     }
 }

@@ -1,0 +1,23 @@
+- usage-pattern:pattern-01-factory: √
+- usage-pattern:pattern-02-singleton: √
+- usage-pattern:pattern-03-prototype: √
+- usage-pattern:pattern-04-builder: 
+- usage-pattern:pattern-05-proxy: √
+- usage-pattern:pattern-06-facade: 
+- usage-pattern:pattern-07-decorator: √
+- usage-pattern:pattern-08-composite: 
+- usage-pattern:pattern-09-flyweight: 
+- usage-pattern:pattern-10-adapter: √
+- usage-pattern:pattern-11-bridge: 
+- usage-pattern:pattern-12-delegate: √
+- usage-pattern:pattern-13-template: √
+- usage-pattern:pattern-14-strategy: √
+- usage-pattern:pattern-15-chain: 
+- usage-pattern:pattern-16-iterator: 
+- usage-pattern:pattern-17-command: 
+- usage-pattern:pattern-18-state: 
+- usage-pattern:pattern-19-memento: 
+- usage-pattern:pattern-20-interpreter: 
+- usage-pattern:pattern-21-mediator: 
+- usage-pattern:pattern-22-observer: 
+- usage-pattern:pattern-23-visitor: 

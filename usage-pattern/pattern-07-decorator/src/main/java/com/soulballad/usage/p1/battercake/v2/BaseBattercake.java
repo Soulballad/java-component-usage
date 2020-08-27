@@ -6,7 +6,7 @@ package com.soulballad.usage.p1.battercake.v2;
  * @email soda931vzr@163.com
  * @description
  */
-public class BaseBattercake extends Battercake{
+public class BaseBattercake extends Battercake {
 
     protected String getMsg() {
         return "煎饼";

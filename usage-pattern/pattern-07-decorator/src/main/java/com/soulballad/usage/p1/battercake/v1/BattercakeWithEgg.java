@@ -14,7 +14,7 @@ public class BattercakeWithEgg extends Battercake {
     }
 
     @Override
-    //加一个鸡蛋加1块钱
+    // 加一个鸡蛋加1块钱
     protected int getPrice() {
         return super.getPrice() + 1;
     }

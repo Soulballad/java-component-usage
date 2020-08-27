@@ -1,6 +1,5 @@
 package com.soulballad.usage.p2.passport.upgrade;
 
-
 import com.soulballad.usage.p2.passport.old.ISigninService;
 import com.soulballad.usage.p2.passport.old.ResultMsg;
 
@@ -11,6 +10,7 @@ public interface ISiginForThirdService extends ISigninService {
 
     /**
      * QQ登录
+     * 
      * @param id
      * @return
      */
@@ -18,6 +18,7 @@ public interface ISiginForThirdService extends ISigninService {
 
     /**
      * 微信登录
+     * 
      * @param id
      * @return
      */
@@ -25,6 +26,7 @@ public interface ISiginForThirdService extends ISigninService {
 
     /**
      * 记住登录状态后自动登录
+     * 
      * @param token
      * @return
      */
@@ -32,6 +34,7 @@ public interface ISiginForThirdService extends ISigninService {
 
     /**
      * 手机号登录
+     * 
      * @param telphone
      * @param code
      * @return
@@ -40,6 +43,7 @@ public interface ISiginForThirdService extends ISigninService {
 
     /**
      * 注册后自动登录
+     * 
      * @param username
      * @param passport
      * @return

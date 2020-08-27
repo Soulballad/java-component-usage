@@ -22,12 +22,12 @@ public class GPClassLoader extends ClassLoader {
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
 
-//        String className = GPClassLoader.class.getPackage() + "." + name;
+        // String className = GPClassLoader.class.getPackage() + "." + name;
         String className = GPClassLoader.class.getPackage().getName() + "." + name;
         if (null != classPathFile) {
 
-            File classFile = new File(classPathFile,name.replaceAll("\\.","/") + ".class");
-//            File classFile = new File(this.classPathFile, className.replace("\\.", "/") + ".class");
+            File classFile = new File(classPathFile, name.replaceAll("\\.", "/") + ".class");
+            // File classFile = new File(this.classPathFile, className.replace("\\.", "/") + ".class");
             if (classFile.exists()) {
 
                 try {

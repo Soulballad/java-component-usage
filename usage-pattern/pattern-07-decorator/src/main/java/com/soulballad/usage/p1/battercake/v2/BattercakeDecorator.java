@@ -6,7 +6,7 @@ package com.soulballad.usage.p1.battercake.v2;
  * @email soda931vzr@163.com
  * @description
  */
-public abstract class BattercakeDecorator extends Battercake{
+public abstract class BattercakeDecorator extends Battercake {
 
     private Battercake battercake;
 

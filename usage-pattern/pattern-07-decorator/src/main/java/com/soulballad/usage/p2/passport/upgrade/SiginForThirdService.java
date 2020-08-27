@@ -1,6 +1,5 @@
 package com.soulballad.usage.p2.passport.upgrade;
 
-
 import com.soulballad.usage.p2.passport.old.ResultMsg;
 
 /**

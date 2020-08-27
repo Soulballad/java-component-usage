@@ -5,7 +5,7 @@ package com.soulballad.usage.p1.simplefactory;
  * @date 2019/3/7/0007 16:12
  * @email soda931vzr@163.com
  */
-public class PoliceCar implements ICar{
+public class PoliceCar implements ICar {
 
     @Override
     public void produce() {

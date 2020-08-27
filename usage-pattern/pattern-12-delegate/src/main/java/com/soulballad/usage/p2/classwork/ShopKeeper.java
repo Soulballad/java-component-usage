@@ -23,7 +23,7 @@ public class ShopKeeper implements IStuff {
             stuff = new IntroduceStuff();
         } else if ("保养".equals(this.request)) {
             stuff = new PainterStuff();
-        }else{
+        } else {
             throw new RuntimeException();
         }
 

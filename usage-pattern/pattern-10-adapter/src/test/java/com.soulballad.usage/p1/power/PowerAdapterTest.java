@@ -1,6 +1,5 @@
 package com.soulballad.usage.p1.power;
 
-
 /**
  * @author Soulballad
  * @date 2019/3/22/0022 21:56

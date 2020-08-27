@@ -6,5 +6,4 @@ package com.soulballad.usage.p3.container;
  * @email soda931vzr@163.com
  * @description
  */
-public class TestClass {
-}
+public class TestClass {}

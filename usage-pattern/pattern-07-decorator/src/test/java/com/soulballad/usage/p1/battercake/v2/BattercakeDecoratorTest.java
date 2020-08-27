@@ -11,15 +11,15 @@ public class BattercakeDecoratorTest {
     public static void main(String[] args) {
 
         Battercake battercake;
-        //买一个煎饼
+        // 买一个煎饼
         battercake = new BaseBattercake();
-        //加一个鸡蛋
+        // 加一个鸡蛋
         battercake = new EggDecorator(battercake);
-        //再加一个鸡蛋
+        // 再加一个鸡蛋
         battercake = new EggDecorator(battercake);
-        //在家根香肠
+        // 在家根香肠
         battercake = new SausageDecorator(battercake);
 
-        System.out.println(battercake.getMsg()+"，总价格：" + battercake.getPrice());
+        System.out.println(battercake.getMsg() + "，总价格：" + battercake.getPrice());
     }
 }

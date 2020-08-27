@@ -22,7 +22,7 @@ public class CarFactory {
         if (!(null == className || "".equals(className))) {
 
             try {
-                return (ICar) Class.forName(className).newInstance();
+                return (ICar)Class.forName(className).newInstance();
             } catch (Exception e) {
                 e.printStackTrace();
             }

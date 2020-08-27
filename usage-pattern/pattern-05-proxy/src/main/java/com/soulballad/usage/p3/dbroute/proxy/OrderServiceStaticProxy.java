@@ -1,12 +1,11 @@
 package com.soulballad.usage.p3.dbroute.proxy;
 
-import com.soulballad.usage.p3.dbroute.DynamicDataSourceEntity;
-import com.soulballad.usage.p3.dbroute.IOrderService;
-import com.soulballad.usage.p3.dbroute.Order;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import com.soulballad.usage.p3.dbroute.DynamicDataSourceEntity;
+import com.soulballad.usage.p3.dbroute.IOrderService;
+import com.soulballad.usage.p3.dbroute.Order;
 
 /**
  * @author Soulballad
@@ -28,7 +27,7 @@ public class OrderServiceStaticProxy implements IOrderService {
         Long createTime = order.getCreateTime();
         Integer year = Integer.valueOf(sdf.format(new Date(createTime)));
         DynamicDataSourceEntity.set(year);
-        System.out.println("静态代理类自动分配到【DB_" +  year + "】数据源处理数据" );
+        System.out.println("静态代理类自动分配到【DB_" + year + "】数据源处理数据");
         int result = this.orderService.createOrder(order);
         DynamicDataSourceEntity.restore();
         return result;

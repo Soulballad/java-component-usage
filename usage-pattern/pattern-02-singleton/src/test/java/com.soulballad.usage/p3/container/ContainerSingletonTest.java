@@ -1,6 +1,5 @@
 package com.soulballad.usage.p3.container;
 
-
 import com.soulballad.usage.p5.executor.ConcurrentExecutor;
 
 /**
@@ -18,7 +17,7 @@ public class ContainerSingletonTest {
                 @Override
                 public void handle() {
                     Object instance = ContainerSingleton.getInstance("com.soulballad.usage.p3.container.TestClass");
-                    System.out.println(System.currentTimeMillis()+":"+instance);
+                    System.out.println(System.currentTimeMillis() + ":" + instance);
                 }
             }, 10, 6);
         } catch (Exception e) {

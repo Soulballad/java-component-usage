@@ -18,6 +18,7 @@ buildscript {
         zipkinVersion = "2.11.9"
         restEasyVersion = "3.0.19.Final"
         junitVersion="4.12"
+        commonsLangVersion="3.8.1"
     }
 
     repositories {
@@ -86,7 +87,8 @@ subprojects {
                 "org.jboss.resteasy:resteasy-netty4:${restEasyVersion}",
                 "org.jboss.resteasy:resteasy-jackson-provider:${restEasyVersion}",
                 "org.jboss.resteasy:resteasy-jaxb-provider:${restEasyVersion}",
-                "junit:junit:${junitVersion}"
+                "junit:junit:${junitVersion}",
+                "org.apache.commons:commons-lang3:${commonsLangVersion}"
         )
     }
 }
@@ -117,5 +119,6 @@ dependencyManagement {
         dependency "org.jboss.resteasy:resteasy-jackson-provider:${restEasyVersion}"
         dependency "org.jboss.resteasy:resteasy-jaxb-provider:${restEasyVersion}"
         dependency "junit:junit:${junitVersion}"
+        dependency "org.apache.commons:commons-lang3:${commonsLangVersion}"
     }
 }

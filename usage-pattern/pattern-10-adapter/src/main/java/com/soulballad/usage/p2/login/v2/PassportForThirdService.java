@@ -1,6 +1,5 @@
 package com.soulballad.usage.p2.login.v2;
 
-
 import com.soulballad.usage.p2.login.ResultMsg;
 import com.soulballad.usage.p2.login.v1.SigninService;
 import com.soulballad.usage.p2.login.v2.adapters.LoginAdapter;
