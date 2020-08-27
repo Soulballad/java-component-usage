@@ -15,21 +15,19 @@ public class ContainerSingleton {
 
     private static Map<String, Object> container = new ConcurrentHashMap<String, Object>();
 
-    public static Object getInstance(String classNamme) {
+    public static Object getInstance(String className) {
 
         Object object = null;
 
-        if (!container.containsKey(classNamme)) {
-
+        if (!container.containsKey(className)) {
             try {
-                object = Class.forName(classNamme).newInstance();
-                container.put(classNamme, object);
+                object = Class.forName(className).newInstance();
+                container.put(className, object);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         } else {
-
-            object = container.get(classNamme);
+            object = container.get(className);
         }
 
         return object;

@@ -5,8 +5,8 @@
 - usage-pattern:pattern-05-proxy: √
 - usage-pattern:pattern-06-facade: 
 - usage-pattern:pattern-07-decorator: √
-- usage-pattern:pattern-08-composite: 
-- usage-pattern:pattern-09-flyweight: 
+- usage-pattern:pattern-08-flyweight: 
+- usage-pattern:pattern-09-composite: 
 - usage-pattern:pattern-10-adapter: √
 - usage-pattern:pattern-11-bridge: 
 - usage-pattern:pattern-12-delegate: √
