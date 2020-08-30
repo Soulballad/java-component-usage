@@ -1,8 +1,9 @@
 package com.soulballad.usage.p2.events;
 
-import com.gupao.pattern.observer.events.mouserevent.Mouse;
-import com.gupao.pattern.observer.events.mouserevent.MouseEventCallback;
-import com.gupao.pattern.observer.events.mouserevent.MouseEventType;
+
+import com.soulballad.usage.p2.events.mouserevent.Mouse;
+import com.soulballad.usage.p2.events.mouserevent.MouseEventCallback;
+import com.soulballad.usage.p2.events.mouserevent.MouseEventType;
 
 /**
  * Created by Tom on 2019/3/17.

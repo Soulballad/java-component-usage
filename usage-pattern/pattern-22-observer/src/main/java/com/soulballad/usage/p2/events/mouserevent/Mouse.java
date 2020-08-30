@@ -1,6 +1,7 @@
 package com.soulballad.usage.p2.events.mouserevent;
 
-import com.gupao.pattern.observer.events.core.EventLisenter;
+
+import com.soulballad.usage.p2.events.core.EventLisenter;
 
 /**
  * Created by Tom.

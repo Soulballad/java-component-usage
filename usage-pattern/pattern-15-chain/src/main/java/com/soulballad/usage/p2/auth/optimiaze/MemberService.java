@@ -1,8 +1,7 @@
 package com.soulballad.usage.p2.auth.optimiaze;
 
 
-import com.gupaoedu.vip.pattern.chain.auth.Member;
-import org.apache.commons.lang.StringUtils;
+import com.soulballad.usage.p2.auth.Member;
 
 /**
  * Created by Tom.

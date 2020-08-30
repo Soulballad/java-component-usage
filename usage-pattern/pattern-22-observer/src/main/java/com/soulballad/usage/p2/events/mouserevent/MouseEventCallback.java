@@ -1,6 +1,7 @@
 package com.soulballad.usage.p2.events.mouserevent;
 
-import com.gupao.pattern.observer.events.core.Event;
+
+import com.soulballad.usage.p2.events.core.Event;
 
 /**
  * 自己写的逻辑，用于回调 Created by Tom.

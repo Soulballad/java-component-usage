@@ -1,12 +1,14 @@
 package com.soulballad.usage.p2.auth.builderchain;
 
-import com.gupaoedu.vip.pattern.chain.auth.Member;
-import org.apache.commons.lang.StringUtils;
+
+import com.soulballad.usage.p2.auth.Member;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Created by Tom.
  */
 public class ValidateHandler extends Handler {
+    @Override
     public void doHandler(Member member) {
         if(StringUtils.isEmpty(member.getLoginName()) ||
                 StringUtils.isEmpty(member.getLoginPass())){
