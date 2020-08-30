@@ -1,6 +1,5 @@
 package com.soulballad.usage.p2.points;
 
-import com.gupaoedu.vip.pattern.facade.general.Facade;
 
 /**
  * Created by Tom.

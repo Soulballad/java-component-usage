@@ -1,8 +1,9 @@
 package com.soulballad.usage.p2.jdbc;
 
+import com.soulballad.usage.p2.jdbc.dao.MemberDao;
+
 import java.util.List;
 
-import com.gupao.pattern.template.jdbc.dao.MemberDao;
 
 /**
  * @author Soulballad

@@ -1,13 +1,13 @@
 package com.soulballad.usage.p2.jdbc.dao;
 
+import com.soulballad.usage.p2.jdbc.JdbcTemplate;
+import com.soulballad.usage.p2.jdbc.Member;
+import com.soulballad.usage.p2.jdbc.RowMapper;
+
 import java.sql.ResultSet;
 import java.util.List;
 
 import javax.sql.DataSource;
-
-import com.gupao.pattern.template.jdbc.JdbcTemplate;
-import com.gupao.pattern.template.jdbc.Member;
-import com.gupao.pattern.template.jdbc.RowMapper;
 
 /**
  * @author Soulballad

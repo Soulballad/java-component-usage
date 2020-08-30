@@ -1,6 +1,7 @@
 package com.soulballad.usage.p2.pay;
 
-import com.gupao.pattern.strategy.pay.payport.PayStrategy;
+
+import com.soulballad.usage.p2.pay.payport.PayStrategy;
 
 /**
  * @author Soulballad
