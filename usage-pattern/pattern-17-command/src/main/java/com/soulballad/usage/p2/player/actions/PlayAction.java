@@ -10,6 +10,7 @@ public class PlayAction implements IAction {
         this.gplayer = gplayer;
     }
 
+    @Override
     public void execute() {
         gplayer.play();
     }

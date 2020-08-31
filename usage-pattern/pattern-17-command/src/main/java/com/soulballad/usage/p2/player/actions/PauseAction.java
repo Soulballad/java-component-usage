@@ -10,6 +10,7 @@ public class PauseAction implements IAction {
         this.gplayer = gplayer;
     }
 
+    @Override
     public void execute() {
         gplayer.pause();
     }

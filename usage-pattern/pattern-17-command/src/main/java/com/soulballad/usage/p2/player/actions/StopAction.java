@@ -10,7 +10,6 @@ public class StopAction implements IAction {
         this.gplayer = gplayer;
     }
 
-
     @Override
     public void execute() {
         gplayer.stop();

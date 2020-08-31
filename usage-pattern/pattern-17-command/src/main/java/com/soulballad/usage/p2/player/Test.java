@@ -1,6 +1,5 @@
 package com.soulballad.usage.p2.player;
 
-
 import com.soulballad.usage.p2.player.actions.PauseAction;
 import com.soulballad.usage.p2.player.actions.PlayAction;
 import com.soulballad.usage.p2.player.actions.SpeedAction;

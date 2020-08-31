@@ -10,6 +10,7 @@ public class SpeedAction implements IAction {
         this.gplayer = gplayer;
     }
 
+    @Override
     public void execute() {
         gplayer.speed();
     }
