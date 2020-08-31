@@ -1,6 +1,6 @@
 package com.soulballad.usage.p1.general;
 
-//请求者
+// 请求者
 public class Invoker {
     private ICommand mCmd;
 

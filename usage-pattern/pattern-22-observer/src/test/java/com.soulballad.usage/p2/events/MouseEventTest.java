@@ -1,6 +1,5 @@
 package com.soulballad.usage.p2.events;
 
-
 import com.soulballad.usage.p2.events.mouserevent.Mouse;
 import com.soulballad.usage.p2.events.mouserevent.MouseEventCallback;
 import com.soulballad.usage.p2.events.mouserevent.MouseEventType;

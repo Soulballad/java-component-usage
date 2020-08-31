@@ -1,8 +1,5 @@
 package com.soulballad.usage.p1.demo.transparent;
 
-/**
- * Created by Tom.
- */
 public class Course extends CourseComponent {
     private String name;
     private double price;

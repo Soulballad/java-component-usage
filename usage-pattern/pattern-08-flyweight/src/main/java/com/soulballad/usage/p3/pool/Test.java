@@ -2,9 +2,6 @@ package com.soulballad.usage.p3.pool;
 
 import java.sql.Connection;
 
-/**
- * Created by Tom.
- */
 public class Test {
     public static void main(String[] args) {
         ConnectionPool pool = new ConnectionPool();

@@ -1,8 +1,5 @@
 package com.soulballad.usage.p1.simple;
 
-/**
- * Created by Tom.
- */
 public class CourseBuilder {
 
     private Course course = new Course();

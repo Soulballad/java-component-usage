@@ -1,8 +1,5 @@
 package com.soulballad.usage.p2.events.mouserevent;
 
-/**
- * Created by Tom.
- */
 public interface MouseEventType {
     // 单击
     String ON_CLICK = "click";

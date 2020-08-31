@@ -1,14 +1,10 @@
 package com.soulballad.usage.p2.auth.optimiaze;
 
-
 import com.soulballad.usage.p2.auth.Member;
 
-/**
- * Created by Tom.
- */
 public class AuthHandler extends Handler {
     public void doHandler(Member member) {
-        if(!"管理员".equals(member.getRoleName())){
+        if (!"管理员".equals(member.getRoleName())) {
             System.out.println("您不是管理员，没有操作权限");
             return;
         }

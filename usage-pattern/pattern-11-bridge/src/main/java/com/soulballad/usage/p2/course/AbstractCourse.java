@@ -1,8 +1,5 @@
 package com.soulballad.usage.p2.course;
 
-/**
- * Created by Tom.
- */
 public class AbstractCourse implements ICourse {
     private INote note;
     private IVideo video;
@@ -17,9 +14,6 @@ public class AbstractCourse implements ICourse {
 
     @Override
     public String toString() {
-        return "AbstractCourse{" +
-                "note=" + note +
-                ", video=" + video +
-                '}';
+        return "AbstractCourse{" + "note=" + note + ", video=" + video + '}';
     }
 }

@@ -4,9 +4,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.Vector;
 
-/**
- * Created by Tom.
- */
 public class ConnectionPool {
 
     private Vector<Connection> pool;
@@ -20,20 +17,20 @@ public class ConnectionPool {
     public ConnectionPool() {
         pool = new Vector<Connection>(poolSize);
 
-        try{
+        try {
             Class.forName(driverClassName);
             for (int i = 0; i < poolSize; i++) {
-                Connection conn = DriverManager.getConnection(url,username,password);
+                Connection conn = DriverManager.getConnection(url, username, password);
                 pool.add(conn);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
 
-    public synchronized Connection getConnection(){
-        if(pool.size() > 0){
+    public synchronized Connection getConnection() {
+        if (pool.size() > 0) {
             Connection conn = pool.get(0);
             pool.remove(conn);
             return conn;
@@ -41,7 +38,7 @@ public class ConnectionPool {
         return null;
     }
 
-    public synchronized void release(Connection conn){
+    public synchronized void release(Connection conn) {
         pool.add(conn);
     }
 }

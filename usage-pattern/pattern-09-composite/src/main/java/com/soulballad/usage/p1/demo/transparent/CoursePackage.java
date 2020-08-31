@@ -3,14 +3,10 @@ package com.soulballad.usage.p1.demo.transparent;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Tom.
- */
 public class CoursePackage extends CourseComponent {
     private List<CourseComponent> items = new ArrayList<CourseComponent>();
     private String name;
     private Integer level;
-
 
     public CoursePackage(String name, Integer level) {
         this.name = name;
@@ -36,20 +32,22 @@ public class CoursePackage extends CourseComponent {
     public void print() {
         System.out.println(this.name);
 
-        for(CourseComponent catalogComponent : items){
-            //控制显示格式
-            if(this.level != null){
-                for(int  i = 0; i < this.level; i ++){
-                    //打印空格控制格式
+        for (CourseComponent catalogComponent : items) {
+            // 控制显示格式
+            if (this.level != null) {
+                for (int i = 0; i < this.level; i++) {
+                    // 打印空格控制格式
                     System.out.print("  ");
                 }
-                for(int  i = 0; i < this.level; i ++){
-                    //每一行开始打印一个+号
-                    if(i == 0){ System.out.print("+"); }
+                for (int i = 0; i < this.level; i++) {
+                    // 每一行开始打印一个+号
+                    if (i == 0) {
+                        System.out.print("+");
+                    }
                     System.out.print("-");
                 }
             }
-            //打印标题
+            // 打印标题
             catalogComponent.print();
         }
     }

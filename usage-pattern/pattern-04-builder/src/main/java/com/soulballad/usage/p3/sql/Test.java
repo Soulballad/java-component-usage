@@ -2,9 +2,6 @@ package com.soulballad.usage.p3.sql;
 
 import java.util.Arrays;
 
-/**
- * Created by Tom.
- */
 public class Test {
     public static void main(String[] args) {
         QueryRule queryRule = QueryRule.getInstance();

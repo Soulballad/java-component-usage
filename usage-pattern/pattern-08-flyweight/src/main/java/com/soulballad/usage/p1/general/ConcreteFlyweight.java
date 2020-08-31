@@ -8,7 +8,6 @@ public class ConcreteFlyweight implements IFlyweight {
         this.intrinsicState = intrinsicState;
     }
 
-
     @Override
     public void operation(String extrinsicState) {
         System.out.println("Object address: " + System.identityHashCode(this));

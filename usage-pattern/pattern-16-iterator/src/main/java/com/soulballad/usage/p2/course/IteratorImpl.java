@@ -2,9 +2,6 @@ package com.soulballad.usage.p2.course;
 
 import java.util.List;
 
-/**
- * Created by Tom.
- */
 public class IteratorImpl<E> implements Iterator<E> {
     private List<E> list;
     private int cursor;
@@ -17,12 +14,12 @@ public class IteratorImpl<E> implements Iterator<E> {
     public E next() {
         System.out.print("当前位置 " + cursor + " : ");
         element = list.get(cursor);
-        cursor ++;
+        cursor++;
         return element;
     }
 
     public boolean hasNext() {
-        if(cursor > list.size() - 1){
+        if (cursor > list.size() - 1) {
             return false;
         }
         return true;

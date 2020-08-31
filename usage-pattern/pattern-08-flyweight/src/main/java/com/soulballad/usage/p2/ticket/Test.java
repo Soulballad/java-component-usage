@@ -10,5 +10,5 @@ public class Test {
         ticket = TicketFactory.queryTicket("北京西", "长沙");
         ticket.showInfo("硬卧");
     }
-    
+
 }

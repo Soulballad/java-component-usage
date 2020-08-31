@@ -1,8 +1,5 @@
 package com.soulballad.usage.p2.course;
 
-/**
- * Created by Tom.
- */
 public class Test {
     public static void main(String[] args) {
         Course java = new Course("Java架构");
@@ -27,9 +24,9 @@ public class Test {
 
     private static void printCourse(ICourseAggregate aggregate) {
         Iterator<Course> i = aggregate.iterator();
-        while (i.hasNext()){
+        while (i.hasNext()) {
             Course course = i.next();
-            System.out.println("《" + course.getName()  + "》");
+            System.out.println("《" + course.getName() + "》");
         }
     }
 }

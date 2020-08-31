@@ -1,8 +1,5 @@
 package com.soulballad.usage.p4.jdk.integer;
 
-/**
- * Created by Tom.
- */
 public class IntegerTest {
     public static void main(String[] args) {
 
@@ -12,7 +9,7 @@ public class IntegerTest {
         Integer c = Integer.valueOf(1000);
         Integer d = 1000;
 
-        System.out.println("a==b:" + (a==b));
-        System.out.println("c==d:" + (c==d));
+        System.out.println("a==b:" + (a == b));
+        System.out.println("c==d:" + (c == d));
     }
 }

@@ -2,7 +2,7 @@ package com.soulballad.usage.p1.general;
 
 import java.util.List;
 
-//具体迭代器
+// 具体迭代器
 public class ConcreteIterator<E> implements Iterator<E> {
     private List<E> list;
     private int cursor = 0;
@@ -11,11 +11,9 @@ public class ConcreteIterator<E> implements Iterator<E> {
         this.list = list;
     }
 
-
     public E next() {
-        return this.list.get(this.cursor ++);
+        return this.list.get(this.cursor++);
     }
-
 
     public boolean hasNext() {
         return this.cursor < this.list.size();

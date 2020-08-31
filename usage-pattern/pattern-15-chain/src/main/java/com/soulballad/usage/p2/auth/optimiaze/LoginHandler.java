@@ -1,11 +1,7 @@
 package com.soulballad.usage.p2.auth.optimiaze;
 
-
 import com.soulballad.usage.p2.auth.Member;
 
-/**
- * Created by Tom.
- */
 public class LoginHandler extends Handler {
     public void doHandler(Member member) {
         System.out.println("登录成功！");

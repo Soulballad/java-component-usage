@@ -1,9 +1,5 @@
 package com.soulballad.usage.p2.points;
 
-
-/**
- * Created by Tom.
- */
 public class Test {
 
     public static void main(String[] args) {

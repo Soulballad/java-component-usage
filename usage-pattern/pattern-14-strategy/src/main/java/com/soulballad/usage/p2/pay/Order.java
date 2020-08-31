@@ -1,6 +1,5 @@
 package com.soulballad.usage.p2.pay;
 
-
 import com.soulballad.usage.p2.pay.payport.PayStrategy;
 
 /**

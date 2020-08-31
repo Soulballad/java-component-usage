@@ -1,8 +1,5 @@
 package com.soulballad.usage.p2.auth;
 
-/**
- * Created by Tom.
- */
 public class Member {
     private String loginName;
     private String loginPass;
@@ -39,10 +36,7 @@ public class Member {
 
     @Override
     public String toString() {
-        return "Member{" +
-                "loginName='" + loginName + '\'' +
-                ", loginPass='" + loginPass + '\'' +
-                ", roleName='" + roleName + '\'' +
-                '}';
+        return "Member{" + "loginName='" + loginName + '\'' + ", loginPass='" + loginPass + '\'' + ", roleName='"
+            + roleName + '\'' + '}';
     }
 }

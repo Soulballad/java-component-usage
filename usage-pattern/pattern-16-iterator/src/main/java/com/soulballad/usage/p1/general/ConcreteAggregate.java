@@ -3,7 +3,7 @@ package com.soulballad.usage.p1.general;
 import java.util.ArrayList;
 import java.util.List;
 
-//具体容器
+// 具体容器
 public class ConcreteAggregate<E> implements IAggregate<E> {
     private List<E> list = new ArrayList<E>();
 

@@ -1,14 +1,13 @@
 package com.soulballad.usage.p2.auth.optimiaze;
 
-
 import com.soulballad.usage.p2.auth.Member;
 
-/**
- * Created by Tom.
- */
 public abstract class Handler {
     protected Handler next;
-    public void next(Handler next){ this.next = next;}
+
+    public void next(Handler next) {
+        this.next = next;
+    }
 
     public abstract void doHandler(Member member);
 }

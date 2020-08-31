@@ -1,8 +1,5 @@
 package com.soulballad.usage.p4.jdk.string;
 
-/**
- * Created by Tom.
- */
 public class StringTest {
     public static void main(String[] args) {
         String s1 = "hello";
@@ -14,11 +11,11 @@ public class StringTest {
         String s7 = "h";
         String s8 = "ello";
         String s9 = s7 + s8;
-        System.out.println(s1==s2);//true
-        System.out.println(s1==s3);//true
-        System.out.println(s1==s4);//false
-        System.out.println(s1==s9);//false
-        System.out.println(s4==s5);//false
-        System.out.println(s1==s6);//true
+        System.out.println(s1 == s2);// true
+        System.out.println(s1 == s3);// true
+        System.out.println(s1 == s4);// false
+        System.out.println(s1 == s9);// false
+        System.out.println(s4 == s5);// false
+        System.out.println(s1 == s6);// true
     }
 }

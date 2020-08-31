@@ -1,6 +1,5 @@
 package com.soulballad.usage.p2.events.mouserevent;
 
-
 import com.soulballad.usage.p2.events.core.Event;
 
 /**

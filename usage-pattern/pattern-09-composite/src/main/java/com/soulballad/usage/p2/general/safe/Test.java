@@ -1,8 +1,5 @@
 package com.soulballad.usage.p2.general.safe;
 
-/**
- * Created by Tom.
- */
 public class Test {
     public static void main(String[] args) {
         // 来一个根节点

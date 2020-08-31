@@ -3,9 +3,6 @@ package com.soulballad.usage.p2.course;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Tom.
- */
 public class CourseAggregateImpl implements ICourseAggregate {
     private List courseList;
 

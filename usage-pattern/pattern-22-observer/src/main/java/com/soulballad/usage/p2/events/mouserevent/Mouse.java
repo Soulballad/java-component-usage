@@ -1,11 +1,7 @@
 package com.soulballad.usage.p2.events.mouserevent;
 
-
 import com.soulballad.usage.p2.events.core.EventLisenter;
 
-/**
- * Created by Tom.
- */
 public class Mouse extends EventLisenter {
 
     public void click() {

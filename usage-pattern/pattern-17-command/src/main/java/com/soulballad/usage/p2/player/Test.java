@@ -5,9 +5,6 @@ import com.gupaoedu.vip.pattern.command.player.actions.PlayAction;
 import com.gupaoedu.vip.pattern.command.player.actions.SpeedAction;
 import com.gupaoedu.vip.pattern.command.player.actions.StopAction;
 
-/**
- * Created by Tom.
- */
 public class Test {
     public static void main(String[] args) {
 

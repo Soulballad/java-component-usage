@@ -22,16 +22,13 @@ public class Composite extends Component {
         return builder.toString();
     }
 
-
     public boolean addChild(Component component) {
         return this.mComponents.add(component);
     }
 
-
     public boolean removeChild(Component component) {
         return this.mComponents.remove(component);
     }
-
 
     public Component getChild(int index) {
         return this.mComponents.get(index);

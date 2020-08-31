@@ -1,6 +1,6 @@
 package com.soulballad.usage.p2.general.transparent;
 
-//叶子节点
+// 叶子节点
 public class Leaf extends Component {
 
     public Leaf(String name) {

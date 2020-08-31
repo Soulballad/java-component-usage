@@ -1,8 +1,5 @@
 package com.soulballad.usage.p2.points;
 
-/**
- * Created by Tom.
- */
 public class GiftInfo {
 
     private String name;
