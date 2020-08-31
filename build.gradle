@@ -8,6 +8,7 @@ buildscript {
         SpringCloudConsulVersion = "2.2.0.RELEASE"
         SpringCloudServicesVersion = "2.2.0.RELEASE"
         SpringCloudCirbakRetryVersion = "1.0.0.RELEASE"
+        SpringStatemachineVersion="2.2.0.RELEASE"
         platformBomVersion = "Cairo-SR5"
         swaggerVersion = "2.9.2"
         knife4jVersion = "1.9.6"
@@ -73,6 +74,7 @@ subprojects {
                 "com.alibaba.cloud:spring-cloud-alibaba-dependencies:${SpringCloudAlibabaVersion}",
                 "com.alibaba.cloud:spring-cloud-alibaba-dependencies:${SpringCloudAlibabaVersion}",
                 "org.springframework.cloud:spring-cloud-starter-circuitbreaker-spring-retry:${SpringCloudCirbakRetryVersion}",
+                "org.springframework.statemachine:spring-statemachine-core:${SpringStatemachineVersion}",
                 "io.springfox:springfox-swagger2:${swaggerVersion}",
                 "io.springfox:springfox-swagger-ui:${swaggerVersion}",
                 "com.github.xiaoymin:swagger-bootstrap-ui:${knife4jVersion}",
@@ -104,6 +106,7 @@ dependencyManagement {
         dependency "com.alibaba.cloud:spring-cloud-alibaba-dependencies:${SpringCloudAlibabaVersion}"
         dependency "com.alibaba.cloud:spring-cloud-alibaba-dependencies:${SpringCloudAlibabaVersion}"
         dependency "org.springframework.cloud:spring-cloud-starter-circuitbreaker-spring-retry:${SpringCloudCirbakRetryVersion}"
+        dependency "org.springframework.statemachine:spring-statemachine-core:${SpringStatemachineVersion}"
         dependency "io.springfox:springfox-swagger2:${swaggerVersion}"
         dependency "io.springfox:springfox-swagger-ui:${swaggerVersion}"
         dependency "com.github.xiaoymin:swagger-bootstrap-ui:${knife4jVersion}"
