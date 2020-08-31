@@ -1,9 +1,10 @@
 package com.soulballad.usage.p2.player;
 
-import com.gupaoedu.vip.pattern.command.player.actions.PauseAction;
-import com.gupaoedu.vip.pattern.command.player.actions.PlayAction;
-import com.gupaoedu.vip.pattern.command.player.actions.SpeedAction;
-import com.gupaoedu.vip.pattern.command.player.actions.StopAction;
+
+import com.soulballad.usage.p2.player.actions.PauseAction;
+import com.soulballad.usage.p2.player.actions.PlayAction;
+import com.soulballad.usage.p2.player.actions.SpeedAction;
+import com.soulballad.usage.p2.player.actions.StopAction;
 
 public class Test {
     public static void main(String[] args) {
