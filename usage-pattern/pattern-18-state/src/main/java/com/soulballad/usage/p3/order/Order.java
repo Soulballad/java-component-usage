@@ -1,11 +1,9 @@
 package com.soulballad.usage.p3.order;
 
-/**
- * Created by Tom.
- */
 public class Order {
     private int id;
     private OrderStatus status;
+
     public void setStatus(OrderStatus status) {
         this.status = status;
     }

@@ -1,6 +1,6 @@
 package com.soulballad.usage.p1.general.apply;
 
-//环境类
+// 环境类
 public class Context {
     public static final State STATE_A = new ConcreteStateA();
     public static final State STATE_B = new ConcreteStateB();

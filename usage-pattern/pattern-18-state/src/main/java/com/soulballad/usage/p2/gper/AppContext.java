@@ -1,8 +1,5 @@
 package com.soulballad.usage.p2.gper;
 
-/**
- * Created by Tom.
- */
 public class AppContext {
 
     public static final UserState STATE_LOGIN = new LoginState();
@@ -15,19 +12,19 @@ public class AppContext {
         STATE_UNLOGIN.setContext(this);
     }
 
-    public void setState(UserState state){
+    public void setState(UserState state) {
         this.currentState = state;
     }
 
-    public UserState getState(){
+    public UserState getState() {
         return this.currentState;
     }
 
-    public void favorite(){
+    public void favorite() {
         this.currentState.favorite();
     }
 
-    public void comment(String comment){
+    public void comment(String comment) {
         this.currentState.comment(comment);
     }
 }

@@ -1,6 +1,6 @@
 package com.soulballad.usage.p1.general.apply;
 
-//具体状态类
+// 具体状态类
 // 具体状态类
 public class ConcreteStateA extends State {
     @Override

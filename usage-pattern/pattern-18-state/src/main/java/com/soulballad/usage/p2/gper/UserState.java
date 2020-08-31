@@ -1,8 +1,5 @@
 package com.soulballad.usage.p2.gper;
 
-/**
- * Created by Tom.
- */
 public abstract class UserState {
     protected AppContext context;
 

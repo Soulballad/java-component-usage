@@ -1,8 +1,5 @@
 package com.soulballad.usage.p2.gper;
 
-/**
- * Created by Tom.
- */
 public class UnLoginState extends UserState {
 
     @Override
@@ -17,7 +14,7 @@ public class UnLoginState extends UserState {
         this.context.getState().comment(comment);
     }
 
-    private void switch2login(){
+    private void switch2login() {
         System.out.println("跳转到登录页！");
         this.context.setState(this.context.STATE_LOGIN);
     }
