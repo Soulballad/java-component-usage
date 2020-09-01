@@ -17,7 +17,7 @@
 - usage-pattern:pattern-17-command: 
 - usage-pattern:pattern-18-state: 
 - usage-pattern:pattern-19-memento: 
-- usage-pattern:pattern-20-interpreter: 
-- usage-pattern:pattern-21-mediator: 
+- usage-pattern:pattern-20-mediator: 
+- usage-pattern:pattern-21-interpreter: 
 - usage-pattern:pattern-22-observer: 
 - usage-pattern:pattern-23-visitor: 

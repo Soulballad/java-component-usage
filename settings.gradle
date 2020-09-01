@@ -11,6 +11,8 @@ include(':usage-arthas')
 include(':usage-elasticsearch')
 include(':usage-pattern')
 
+// ================================================================ user-pattern ================================================================ //
+// user-pattern modules
 include(':usage-pattern:pattern-01-factory')
 include(':usage-pattern:pattern-02-singleton')
 include(':usage-pattern:pattern-03-prototype')
@@ -30,12 +32,12 @@ include(':usage-pattern:pattern-16-iterator')
 include(':usage-pattern:pattern-17-command')
 include(':usage-pattern:pattern-18-state')
 include(':usage-pattern:pattern-19-memento')
-include(':usage-pattern:pattern-20-interpreter')
-include(':usage-pattern:pattern-21-mediator')
+include(':usage-pattern:pattern-20-mediator')
+include(':usage-pattern:pattern-21-interpreter')
 include(':usage-pattern:pattern-22-observer')
 include(':usage-pattern:pattern-23-visitor')
 
-
+// user-pattern projectDir
 project(':usage-pattern:pattern-01-factory').projectDir = file('usage-pattern/pattern-01-factory')
 project(':usage-pattern:pattern-02-singleton').projectDir = file('usage-pattern/pattern-02-singleton')
 project(':usage-pattern:pattern-03-prototype').projectDir = file('usage-pattern/pattern-03-prototype')
@@ -55,8 +57,9 @@ project(':usage-pattern:pattern-16-iterator').projectDir = file('usage-pattern/p
 project(':usage-pattern:pattern-17-command').projectDir = file('usage-pattern/pattern-17-command')
 project(':usage-pattern:pattern-18-state').projectDir = file('usage-pattern/pattern-18-state')
 project(':usage-pattern:pattern-19-memento').projectDir = file('usage-pattern/pattern-19-memento')
-project(':usage-pattern:pattern-20-interpreter').projectDir = file('usage-pattern/pattern-20-interpreter')
-project(':usage-pattern:pattern-21-mediator').projectDir = file('usage-pattern/pattern-21-mediator')
+project(':usage-pattern:pattern-20-mediator').projectDir = file('usage-pattern/pattern-20-mediator')
+project(':usage-pattern:pattern-21-interpreter').projectDir = file('usage-pattern/pattern-21-interpreter')
 project(':usage-pattern:pattern-22-observer').projectDir = file('usage-pattern/pattern-22-observer')
 project(':usage-pattern:pattern-23-visitor').projectDir = file('usage-pattern/pattern-23-visitor')
 
+// ================================================================ user-pattern ================================================================ //
