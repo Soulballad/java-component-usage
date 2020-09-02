@@ -1,4 +1,6 @@
-package com.soulballad.usage.p2.factorymethod;
+package com.soulballad.usage.p2.factorymethod.factory;
+
+import com.soulballad.usage.p2.factorymethod.ICar;
 
 /**
  * @author Soulballad

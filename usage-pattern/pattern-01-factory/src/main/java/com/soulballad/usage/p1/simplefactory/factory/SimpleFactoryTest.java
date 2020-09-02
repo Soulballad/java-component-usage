@@ -1,4 +1,8 @@
-package com.soulballad.usage.p1.simplefactory;
+package com.soulballad.usage.p1.simplefactory.factory;
+
+import com.soulballad.usage.p1.simplefactory.ElectricCar;
+import com.soulballad.usage.p1.simplefactory.ICar;
+import com.soulballad.usage.p1.simplefactory.PoliceCar;
 
 /**
  * @author Soulballad

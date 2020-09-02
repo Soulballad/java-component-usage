@@ -1,4 +1,4 @@
-package com.soulballad.usage.p2.factorymethod;
+package com.soulballad.usage.p2.factorymethod.factory;
 
 /**
  * @author Soulballad

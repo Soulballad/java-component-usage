@@ -1,4 +1,4 @@
-package com.soulballad.usage.p3.abstractfactory;
+package com.soulballad.usage.p3.abstractfactory.factory;
 
 /**
  * @author Soulballad
