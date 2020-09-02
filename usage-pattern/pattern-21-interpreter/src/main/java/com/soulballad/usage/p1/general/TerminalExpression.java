@@ -7,7 +7,7 @@ public class TerminalExpression implements IExpression {
 
     public Object interpret(Context context) {
         // 实现文法中与终结符有关的操作
-        context.put("","");
+        context.put("", "");
         return null;
     }
 

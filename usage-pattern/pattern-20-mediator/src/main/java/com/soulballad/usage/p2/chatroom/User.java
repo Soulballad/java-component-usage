@@ -1,8 +1,5 @@
 package com.soulballad.usage.p2.chatroom;
 
-/**
- * Created by Tom.
- */
 public class User {
     private String name;
     private ChatRoom chatRoom;
@@ -16,7 +13,7 @@ public class User {
         return name;
     }
 
-    public void sendMessage(String msg){
-        this.chatRoom.showMsg(this,msg);
+    public void sendMessage(String msg) {
+        this.chatRoom.showMsg(this, msg);
     }
 }

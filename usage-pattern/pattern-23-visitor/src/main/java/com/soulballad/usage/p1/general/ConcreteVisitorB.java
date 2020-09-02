@@ -8,7 +8,6 @@ public class ConcreteVisitorB implements IVisitor {
         System.out.println("result from " + element.getClass().getSimpleName() + ": " + result);
     }
 
-
     public void visit(ConcreteElementB element) {
         int result = element.operationB();
         System.out.println("result from " + element.getClass().getSimpleName() + ": " + result);

@@ -13,7 +13,7 @@ import org.apache.commons.lang3.StringUtils;
 /**
  * 根据QueryRule自动构建sql语句
  * 
- * @author Tom
+ *
  *
  */
 public class QueryRuleSqlBuilder {

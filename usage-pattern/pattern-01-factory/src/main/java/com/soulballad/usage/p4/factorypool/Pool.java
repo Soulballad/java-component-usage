@@ -13,7 +13,7 @@ import java.util.Properties;
  * createPool()建连接池 getConnection()返回一个连接实例 getConnection(long time)添加时间限制 freeConnection(Connection con)将con连接实例返回到连接池
  * getnum()返回空闲连接数 getnumActive()返回当前使用的连接数
  *
- * @author Tom
+ *
  *
  */
 

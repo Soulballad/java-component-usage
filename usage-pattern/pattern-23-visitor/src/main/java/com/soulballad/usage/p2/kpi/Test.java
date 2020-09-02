@@ -1,8 +1,5 @@
 package com.soulballad.usage.p2.kpi;
 
-/**
- * Created by Tom.
- */
 public class Test {
     public static void main(String[] args) {
         BusinessReport report = new BusinessReport();

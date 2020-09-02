@@ -1,9 +1,6 @@
 package com.soulballad.usage.p1.general;
 
-/**
- * Created by geely
- */
-public class Test {
+public class BuilderTest {
     public static void main(String[] args) {
         CourseBuilder builder = new CourseBuilder();
 
@@ -14,6 +11,5 @@ public class Test {
         builder.addHomework("【课后作业】");
 
         System.out.println(builder.build());
-
     }
 }

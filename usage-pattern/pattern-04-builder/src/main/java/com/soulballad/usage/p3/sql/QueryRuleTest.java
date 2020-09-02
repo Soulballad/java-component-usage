@@ -2,7 +2,7 @@ package com.soulballad.usage.p3.sql;
 
 import java.util.Arrays;
 
-public class Test {
+public class QueryRuleTest {
     public static void main(String[] args) {
         QueryRule queryRule = QueryRule.getInstance();
         queryRule.addAscOrder("age");

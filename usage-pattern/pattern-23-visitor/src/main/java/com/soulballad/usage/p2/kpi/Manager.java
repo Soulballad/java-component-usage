@@ -2,9 +2,6 @@ package com.soulballad.usage.p2.kpi;
 
 import java.util.Random;
 
-/**
- * Created by Tom.
- */
 public class Manager extends Employee {
     public Manager(String name) {
         super(name);
@@ -14,8 +11,8 @@ public class Manager extends Employee {
         visitor.visit(this);
     }
 
-    //考核的是每年新产品研发数量
-    public int getProducts(){
+    // 考核的是每年新产品研发数量
+    public int getProducts() {
         return new Random().nextInt(10);
     }
 }

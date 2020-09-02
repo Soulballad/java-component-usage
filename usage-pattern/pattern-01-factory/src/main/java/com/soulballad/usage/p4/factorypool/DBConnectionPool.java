@@ -13,7 +13,7 @@ import java.util.Vector;
 /**
  * 数据库链接池管理类
  *
- * @author Tom
+ *
  *
  */
 public final class DBConnectionPool extends Pool {

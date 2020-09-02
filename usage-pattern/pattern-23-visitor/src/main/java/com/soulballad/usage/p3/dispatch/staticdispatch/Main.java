@@ -1,13 +1,11 @@
 package com.soulballad.usage.p3.dispatch.staticdispatch;
 
-/**
- * Created by Tom.
- */
 public class Main {
-    public void test(String string){
+    public void test(String string) {
         System.out.println("string" + string);
     }
-    public void test(Integer integer){
+
+    public void test(Integer integer) {
         System.out.println("integer" + integer);
     }
 

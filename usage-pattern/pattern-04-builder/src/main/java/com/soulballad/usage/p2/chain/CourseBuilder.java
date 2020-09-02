@@ -1,7 +1,7 @@
 package com.soulballad.usage.p2.chain;
 
 public class CourseBuilder {
-    private Course course = new Course();
+    private final Course course = new Course();
 
     public CourseBuilder addName(String name) {
         course.setName(name);
@@ -32,7 +32,7 @@ public class CourseBuilder {
         return this.course;
     }
 
-    public class Course {
+    public static class Course {
 
         private String name;
         private String ppt;

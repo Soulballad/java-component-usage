@@ -3,9 +3,6 @@ package com.soulballad.usage.p2.kpi;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by Tom.
- */
 public class BusinessReport {
     private List<Employee> employees = new LinkedList<Employee>();
 
@@ -18,7 +15,7 @@ public class BusinessReport {
         employees.add(new Engineer("程序员D"));
     }
 
-    public void showReport(IVisitor visitor){
+    public void showReport(IVisitor visitor) {
         for (Employee employee : employees) {
             employee.accept(visitor);
         }

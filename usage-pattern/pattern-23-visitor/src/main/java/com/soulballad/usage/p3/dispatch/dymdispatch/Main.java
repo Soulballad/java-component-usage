@@ -1,8 +1,5 @@
 package com.soulballad.usage.p3.dispatch.dymdispatch;
 
-/**
- * Created by Tom.
- */
 public class Main {
     public static void main(String[] args) {
         Person man = new Man();
