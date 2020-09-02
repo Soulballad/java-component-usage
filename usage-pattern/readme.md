@@ -1,23 +1,23 @@
-- usage-pattern:pattern-01-factory: √
-- usage-pattern:pattern-02-singleton: √
-- usage-pattern:pattern-03-prototype: √
-- usage-pattern:pattern-04-builder: 
-- usage-pattern:pattern-05-proxy: √
-- usage-pattern:pattern-06-facade: 
-- usage-pattern:pattern-07-decorator: √
-- usage-pattern:pattern-08-flyweight: 
-- usage-pattern:pattern-09-composite: 
-- usage-pattern:pattern-10-adapter: √
-- usage-pattern:pattern-11-bridge: 
-- usage-pattern:pattern-12-delegate: √
-- usage-pattern:pattern-13-template: √
-- usage-pattern:pattern-14-strategy: √
-- usage-pattern:pattern-15-chain: 
-- usage-pattern:pattern-16-iterator: 
-- usage-pattern:pattern-17-command: 
-- usage-pattern:pattern-18-state: 
-- usage-pattern:pattern-19-memento: 
-- usage-pattern:pattern-20-mediator: 
-- usage-pattern:pattern-21-interpreter: 
-- usage-pattern:pattern-22-observer: 
-- usage-pattern:pattern-23-visitor: 
+- **pattern-01-factory**: 工厂模式
+- **pattern-02-singleton**: 单例模式
+- **pattern-03-prototype**: 原型模式
+- **pattern-04-builder**: 建造者模式
+- **pattern-05-proxy**: 代理模式
+- **pattern-06-facade**: 门面模式
+- **pattern-07-decorator**: 装饰模式
+- **pattern-08-flyweight**: 享元模式
+- **pattern-09-composite**: 组合模式
+- **pattern-10-adapter**: 适配器模式
+- **pattern-11-bridge**: 桥接模式
+- **pattern-12-delegate**: 委派模式
+- **pattern-13-template**: 模板方法模式
+- **pattern-14-strategy**: 策略模式
+- **pattern-15-chain**: 责任链模式
+- **pattern-16-iterator**: 迭代器模式
+- **pattern-17-command**: 命令模式
+- **pattern-18-state**: 状态模式
+- **pattern-19-memento**: 备忘录模式
+- **pattern-20-mediator**: 终结者模式
+- **pattern-21-interpreter**: 解释器模式
+- **pattern-22-observer**: 观察者模式
+- **pattern-23-visitor**: 访问者模式
