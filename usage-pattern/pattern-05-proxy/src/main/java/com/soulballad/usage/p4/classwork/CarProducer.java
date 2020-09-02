@@ -8,5 +8,5 @@ package com.soulballad.usage.p4.classwork;
  */
 public interface CarProducer {
 
-    public void saleCar();
+    void saleCar();
 }

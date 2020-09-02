@@ -23,12 +23,10 @@ public class Audi4sShop implements CarProducer {
     }
 
     private void introduce() {
-
         System.out.println("介绍奥迪汽车");
     }
 
     private void keep() {
-
         System.out.println("保养奥迪汽车");
     }
 }

@@ -20,6 +20,7 @@ buildscript {
         restEasyVersion = "3.0.19.Final"
         junitVersion="4.12"
         commonsLangVersion="3.8.1"
+        cglibVersion="2.2"
     }
 
     repositories {
@@ -90,7 +91,8 @@ subprojects {
                 "org.jboss.resteasy:resteasy-jackson-provider:${restEasyVersion}",
                 "org.jboss.resteasy:resteasy-jaxb-provider:${restEasyVersion}",
                 "junit:junit:${junitVersion}",
-                "org.apache.commons:commons-lang3:${commonsLangVersion}"
+                "org.apache.commons:commons-lang3:${commonsLangVersion}",
+                "cglib:cglib-nodep:${cglibVersion}"
         )
     }
 }
@@ -123,5 +125,6 @@ dependencyManagement {
         dependency "org.jboss.resteasy:resteasy-jaxb-provider:${restEasyVersion}"
         dependency "junit:junit:${junitVersion}"
         dependency "org.apache.commons:commons-lang3:${commonsLangVersion}"
+        dependency "cglib:cglib-nodep:${cglibVersion}"
     }
 }
