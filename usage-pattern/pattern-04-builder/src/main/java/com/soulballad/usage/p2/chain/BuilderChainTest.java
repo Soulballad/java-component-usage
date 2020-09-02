@@ -4,13 +4,11 @@ import org.apache.ibatis.mapping.CacheBuilder;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 
-/**
- * Created by Tom
- */
 public class BuilderChainTest {
     public static void main(String[] args) {
-        CourseBuilder builder = new CourseBuilder().addName("设计模式").addPPT("【PPT课件】").addVideo("【回放视频】")
-            .addNote("【课堂笔记】").addHomework("【课后作业】");
+
+        CarBuilder builder =
+            new CarBuilder().addDoor("防弹车门").addEngine("V8发动机").addLight("镭射强光灯").addWheel("防弹轮胎").addAirBag("安全气囊");
 
         System.out.println(builder.build());
 

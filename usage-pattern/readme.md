@@ -1,6 +1,6 @@
 - **pattern-01-factory**: 工厂模式
 - **pattern-02-singleton**: 单例模式
-- **pattern-03-prototype**: 原型模式
+- **pattern-03-prototype**: 原型模式 √
 - **pattern-04-builder**: 建造者模式
 - **pattern-05-proxy**: 代理模式
 - **pattern-06-facade**: 门面模式

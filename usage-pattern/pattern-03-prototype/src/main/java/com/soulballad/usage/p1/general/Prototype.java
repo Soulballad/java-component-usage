@@ -8,5 +8,5 @@ package com.soulballad.usage.p1.general;
  */
 public interface Prototype {
 
-    public Prototype clone();
+    Prototype clone();
 }

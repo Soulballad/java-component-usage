@@ -4,9 +4,7 @@ import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 
-/**
- * Created by Tom
- */
+
 public class SpringTest {
     public static void main(String[] args) {
         ExpressionParser parser = new SpelExpressionParser();

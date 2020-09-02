@@ -18,14 +18,14 @@ import org.apache.commons.lang3.StringUtils;
  */
 public class QueryRuleSqlBuilder {
     private int CURR_INDEX = 0; // 记录参数所在的位置
-    private List<String> properties; // 保存列名列表
-    private List<Object> values; // 保存参数值列表
-    private List<Order> orders; // 保存排序规则列表
+    private final List<String> properties; // 保存列名列表
+    private final List<Object> values; // 保存参数值列表
+    private final List<Order> orders; // 保存排序规则列表
 
     private String whereSql = "";
     private String orderSql = "";
     private Object[] valueArr = new Object[] {};
-    private Map<Object, Object> valueMap = new HashMap<Object, Object>();
+    private final Map<Object, Object> valueMap = new HashMap<>();
 
     /**
      * 或得查询条件
@@ -84,7 +84,7 @@ public class QueryRuleSqlBuilder {
                 case QueryRule.LIKE:
                     processLike(rule);
                     break;
-                case QueryRule.NOTEQ:
+                case QueryRule.NOT_EQ:
                     processNotEqual(rule);
                     break;
                 case QueryRule.GT:
@@ -102,19 +102,19 @@ public class QueryRuleSqlBuilder {
                 case QueryRule.IN:
                     processIN(rule);
                     break;
-                case QueryRule.NOTIN:
+                case QueryRule.NOT_IN:
                     processNotIN(rule);
                     break;
-                case QueryRule.ISNULL:
+                case QueryRule.IS_NULL:
                     processIsNull(rule);
                     break;
-                case QueryRule.ISNOTNULL:
+                case QueryRule.IS_NOT_NULL:
                     processIsNotNull(rule);
                     break;
-                case QueryRule.ISEMPTY:
+                case QueryRule.IS_EMPTY:
                     processIsEmpty(rule);
                     break;
-                case QueryRule.ISNOTEMPTY:
+                case QueryRule.IS_NOT_EMPTY:
                     processIsNotEmpty(rule);
                     break;
                 case QueryRule.ASC_ORDER:
