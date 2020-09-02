@@ -1,4 +1,4 @@
-package com.soulballad.usage.p1.simple;
+package com.soulballad.usage.p1.general;
 
 import java.util.HashMap;
 import java.util.Map;
