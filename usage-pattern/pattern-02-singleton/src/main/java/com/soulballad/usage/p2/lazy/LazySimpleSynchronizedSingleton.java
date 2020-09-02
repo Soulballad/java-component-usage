@@ -15,7 +15,6 @@ public class LazySimpleSynchronizedSingleton {
     public static synchronized LazySimpleSynchronizedSingleton getInstance() {
 
         if (null == singleton) {
-
             singleton = new LazySimpleSynchronizedSingleton();
         }
 

@@ -15,7 +15,6 @@ public class LazySimpleSingleton {
     public static LazySimpleSingleton getInstance() {
 
         if (null == singleton) {
-
             singleton = new LazySimpleSingleton();
         }
 
