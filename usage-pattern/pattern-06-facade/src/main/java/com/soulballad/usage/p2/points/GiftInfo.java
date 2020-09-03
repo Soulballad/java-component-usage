@@ -11,5 +11,4 @@ public class GiftInfo {
     public String getName() {
         return name;
     }
-
 }
