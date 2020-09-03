@@ -10,7 +10,7 @@ public class HignwayServiceAreaTest {
 
     public static void main(String[] args) {
 
-        HignWayServiceArea serviceArea = new HignWayServiceArea();
+        HighWayServiceArea serviceArea = new HighWayServiceArea();
         serviceArea.service(new GasCar("汽油车"));
         serviceArea.service(new ElectricCar("电动汽车"));
     }
