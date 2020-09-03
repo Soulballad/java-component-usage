@@ -1,4 +1,4 @@
-package com.soulballad.usage.p1.demo.transparent;
+package com.soulballad.usage.p2.demo.transparent;
 
 import java.util.ArrayList;
 import java.util.List;

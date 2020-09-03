@@ -1,7 +1,7 @@
-package com.soulballad.usage.p2.general.transparent;
+package com.soulballad.usage.p1.general.safe;
 
 // 叶子节点
-public class Leaf extends Component {
+public class Leaf extends Node {
 
     public Leaf(String name) {
         super(name);

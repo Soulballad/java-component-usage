@@ -1,24 +1,24 @@
-package com.soulballad.usage.p2.general.transparent;
+package com.soulballad.usage.p1.general.transparent;
 
 // 抽象根节点
-public abstract class Component {
+public abstract class Node {
     protected String name;
 
-    public Component(String name) {
+    public Node(String name) {
         this.name = name;
     }
 
     public abstract String operation();
 
-    public boolean addChild(Component component) {
+    public boolean addChild(Node node) {
         throw new UnsupportedOperationException("addChild not supported!");
     }
 
-    public boolean removeChild(Component component) {
+    public boolean removeChild(Node node) {
         throw new UnsupportedOperationException("removeChild not supported!");
     }
 
-    public Component getChild(int index) {
+    public Node getChild(int index) {
         throw new UnsupportedOperationException("getChild not supported!");
     }
 }

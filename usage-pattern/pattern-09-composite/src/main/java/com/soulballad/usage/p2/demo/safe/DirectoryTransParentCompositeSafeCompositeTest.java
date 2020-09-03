@@ -1,13 +1,15 @@
-package com.soulballad.usage.p1.demo.safe;
+package com.soulballad.usage.p2.demo.safe;
 
-class Test {
-    public static void main(String[] args) {
+import org.junit.Test;
 
+public class DirectoryTransParentCompositeSafeCompositeTest {
+
+    @Test
+    public void test_directory() {
         System.out.println("============安全组合模式===========");
 
         File qq = new File("QQ.exe");
         File wx = new File("微信.exe");
-
         Folder office = new Folder("办公软件", 2);
 
         File word = new File("Word.exe");
@@ -32,6 +34,5 @@ class Test {
 
         System.out.println("----------list()方法效果-----------");
         root.list();
-
     }
 }

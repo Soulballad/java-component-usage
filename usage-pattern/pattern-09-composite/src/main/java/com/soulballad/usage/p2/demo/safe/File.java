@@ -1,4 +1,4 @@
-package com.soulballad.usage.p1.demo.safe;
+package com.soulballad.usage.p2.demo.safe;
 
 public class File extends Directory {
 
@@ -10,5 +10,4 @@ public class File extends Directory {
     public void show() {
         System.out.println(this.name);
     }
-
 }

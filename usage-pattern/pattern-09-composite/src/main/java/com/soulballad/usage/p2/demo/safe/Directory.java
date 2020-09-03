@@ -1,4 +1,4 @@
-package com.soulballad.usage.p1.demo.safe;
+package com.soulballad.usage.p2.demo.safe;
 
 public abstract class Directory {
 
@@ -9,5 +9,4 @@ public abstract class Directory {
     }
 
     public abstract void show();
-
 }

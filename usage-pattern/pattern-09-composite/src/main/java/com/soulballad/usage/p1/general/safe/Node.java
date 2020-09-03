@@ -1,10 +1,10 @@
-package com.soulballad.usage.p2.general.safe;
+package com.soulballad.usage.p1.general.safe;
 
 // 抽象根节点
-public abstract class Component {
+public abstract class Node {
     protected String name;
 
-    public Component(String name) {
+    public Node(String name) {
         this.name = name;
     }
 

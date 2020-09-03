@@ -1,4 +1,4 @@
-package com.soulballad.usage.p1.demo.safe;
+package com.soulballad.usage.p2.demo.safe;
 
 import java.util.ArrayList;
 import java.util.List;
