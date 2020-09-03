@@ -26,7 +26,6 @@ public class ConnectionPool {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     public synchronized Connection getConnection() {

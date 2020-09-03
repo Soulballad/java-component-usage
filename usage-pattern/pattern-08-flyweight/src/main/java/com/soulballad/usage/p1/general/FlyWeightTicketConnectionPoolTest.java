@@ -2,7 +2,7 @@ package com.soulballad.usage.p1.general;
 
 import org.junit.Test;
 
-public class FlyWeightTest {
+public class FlyWeightTicketConnectionPoolTest {
     @Test
     public void test_flyWeight() {
         IFlyweight flyweight1 = FlyweightFactory.getFlyweight("aa");

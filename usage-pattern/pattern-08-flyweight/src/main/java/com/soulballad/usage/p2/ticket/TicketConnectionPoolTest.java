@@ -1,8 +1,11 @@
 package com.soulballad.usage.p2.ticket;
 
-public class Test {
+import org.junit.Test;
 
-    public static void main(String[] args) {
+public class TicketConnectionPoolTest {
+
+    @Test
+    public void test_ticket() {
         ITicket ticket = TicketFactory.queryTicket("北京西", "长沙");
         ticket.showInfo("硬座");
         ticket = TicketFactory.queryTicket("北京西", "长沙");
@@ -10,5 +13,4 @@ public class Test {
         ticket = TicketFactory.queryTicket("北京西", "长沙");
         ticket.showInfo("硬卧");
     }
-
 }

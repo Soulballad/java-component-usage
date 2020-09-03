@@ -1,8 +1,11 @@
 package com.soulballad.usage.p4.jdk.integer;
 
-public class IntegerTest {
-    public static void main(String[] args) {
+import org.junit.Test;
 
+public class IntegerTest {
+
+    @Test
+    public void test_integer() {
         Integer a = Integer.valueOf(100);
         Integer b = 100;
 

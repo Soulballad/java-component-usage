@@ -1,7 +1,11 @@
 package com.soulballad.usage.p4.jdk.string;
 
+import org.junit.Test;
+
 public class StringTest {
-    public static void main(String[] args) {
+
+    @Test
+    public void test_string() {
         String s1 = "hello";
         String s2 = "hello";
         String s3 = "he" + "llo";
