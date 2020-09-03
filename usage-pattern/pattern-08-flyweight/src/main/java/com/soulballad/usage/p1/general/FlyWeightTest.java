@@ -1,7 +1,10 @@
 package com.soulballad.usage.p1.general;
 
-public class Test {
-    public static void main(String[] args) {
+import org.junit.Test;
+
+public class FlyWeightTest {
+    @Test
+    public void test_flyWeight() {
         IFlyweight flyweight1 = FlyweightFactory.getFlyweight("aa");
         IFlyweight flyweight2 = FlyweightFactory.getFlyweight("bb");
         flyweight1.operation("a");

@@ -1,5 +1,6 @@
 package com.soulballad.usage.p4;
 
+import org.junit.Test;
 import org.slf4j.Logger;
 
 import java.io.BufferedInputStream;
@@ -14,13 +15,12 @@ public class LogDecoratorTest {
     //    private static final Logger logger = LoggerFactory.getLogger(Test.class);
     private static final Logger logger = JsonLoggerFactory.getLogger(LogDecoratorTest.class);
 
-    public static void main(String[] args) {
+    @Test
+    public void test_loggerDecorator() {
         logger.error("系统错误");
-
 
         try {
             InputStream in = new FileInputStream("");
-
             BufferedInputStream bis = new BufferedInputStream(in);
 
             bis.read();
@@ -35,6 +35,5 @@ public class LogDecoratorTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }
