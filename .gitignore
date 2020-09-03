@@ -13,6 +13,7 @@
 **/mvnw
 **/HELP.md
 **/build
+**/out
 .gradle
 gradle
 
