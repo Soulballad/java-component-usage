@@ -11,6 +11,7 @@ public class IteratorImpl<E> implements Iterator<E> {
         this.list = list;
     }
 
+    @Override
     public E next() {
         System.out.print("当前位置 " + cursor + " : ");
         element = list.get(cursor);
@@ -18,10 +19,8 @@ public class IteratorImpl<E> implements Iterator<E> {
         return element;
     }
 
+    @Override
     public boolean hasNext() {
-        if (cursor > list.size() - 1) {
-            return false;
-        }
-        return true;
+        return cursor <= list.size() - 1;
     }
 }

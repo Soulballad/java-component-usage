@@ -1,7 +1,11 @@
 package com.soulballad.usage.p2.course;
 
-public class Test {
-    public static void main(String[] args) {
+import org.junit.Test;
+
+public class CourseIteratorTest {
+
+    @Test
+    public void test_courseIterator() {
         Course java = new Course("Java架构");
         Course javaBase = new Course("Java基础");
         Course design = new Course("设计模式");
@@ -22,7 +26,7 @@ public class Test {
         printCourse(aggregate);
     }
 
-    private static void printCourse(ICourseAggregate aggregate) {
+    private void printCourse(ICourseAggregate aggregate) {
         Iterator<Course> i = aggregate.iterator();
         while (i.hasNext()) {
             Course course = i.next();

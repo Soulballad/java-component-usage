@@ -1,7 +1,11 @@
 package com.soulballad.usage.p1.general;
 
-public class Test {
-    public static void main(String[] args) {
+import org.junit.Test;
+
+public class GeneralIteratorTest {
+
+    @Test
+    public void test_iterator() {
         // 来一个容器对象
         IAggregate<String> aggregate = new ConcreteAggregate<String>();
         // 添加元素
@@ -15,6 +19,5 @@ public class Test {
             String element = iterator.next();
             System.out.println(element);
         }
-
     }
 }

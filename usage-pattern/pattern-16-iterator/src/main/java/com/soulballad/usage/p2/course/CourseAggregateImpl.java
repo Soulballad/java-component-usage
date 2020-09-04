@@ -10,14 +10,17 @@ public class CourseAggregateImpl implements ICourseAggregate {
         this.courseList = new ArrayList();
     }
 
+    @Override
     public void add(Course course) {
         courseList.add(course);
     }
 
+    @Override
     public void remove(Course course) {
         courseList.remove(course);
     }
 
+    @Override
     public Iterator<Course> iterator() {
         return new IteratorImpl<Course>(courseList);
     }
