@@ -1,4 +1,4 @@
-package com.soulballad.usage.p2.auth.optimiaze;
+package com.soulballad.usage.p2.auth.optimize;
 
 import com.soulballad.usage.p2.auth.Member;
 

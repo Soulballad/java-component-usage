@@ -1,10 +1,14 @@
 package com.soulballad.usage.p1.general;
 
-public class Test {
-    public static void main(String[] args) {
+import org.junit.Test;
+
+public class GeneralChainTest {
+
+    @Test
+    public void test_chain() {
         Handler handlerA = new ConcreteHandlerA();
         Handler handlerB = new ConcreteHandlerB();
-        handlerA.setNextHanlder(handlerB);
+        handlerA.setNextHandler(handlerB);
         handlerA.handleRequest("requestB");
     }
 }

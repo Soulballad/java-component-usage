@@ -4,10 +4,9 @@ public abstract class Handler {
 
     protected Handler nextHandler;
 
-    public void setNextHanlder(Handler successor) {
+    public void setNextHandler(Handler successor) {
         this.nextHandler = successor;
     }
 
     public abstract void handleRequest(String request);
-
 }
