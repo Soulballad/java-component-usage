@@ -1,10 +1,7 @@
-package com.soulballad.usage.p2.jdbc;
+package com.soulballad.usage.p3.jdbc.entity;
 
 /**
- * @author Soulballad
- * @date 2019/3/22/0022 21:22
- * @email soda931vzr@163.com
- * @description
+ * Created by Tom.
  */
 public class Member {
 

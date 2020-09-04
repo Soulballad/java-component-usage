@@ -1,39 +1,32 @@
-package com.soulballad.usage.p2.jdbc.dao;
+package com.soulballad.usage.p3.jdbc.dao;
 
+import com.soulballad.usage.p3.jdbc.entity.Member;
+import com.soulballad.usage.p3.jdbc.framework.JdbcTemplate;
+import com.soulballad.usage.p3.jdbc.framework.RowMapper;
+
+import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.util.List;
 
-import javax.sql.DataSource;
-
-import com.soulballad.usage.p2.jdbc.JdbcTemplate;
-import com.soulballad.usage.p2.jdbc.Member;
-import com.soulballad.usage.p2.jdbc.RowMapper;
-
 /**
- * @author Soulballad
- * @date 2019/3/22/0022 21:22
- * @email soda931vzr@163.com
- * @description
+ * Created by Tom.
  */
 public class MemberDao extends JdbcTemplate {
-
     public MemberDao(DataSource dataSource) {
         super(dataSource);
     }
 
-    public List<?> selectAll() throws Exception {
-
+    public List<?> selectAll() {
         String sql = "select * from t_member";
         return super.executeQuery(sql, new RowMapper<Member>() {
             @Override
             public Member mapRow(ResultSet rs, int rowNum) throws Exception {
                 Member member = new Member();
+                // 字段过多，原型模式
                 member.setUsername(rs.getString("username"));
                 member.setPassword(rs.getString("password"));
-                member.setNickname(rs.getString("nickname"));
                 member.setAge(rs.getInt("age"));
                 member.setAddr(rs.getString("addr"));
-
                 return member;
             }
         }, null);
