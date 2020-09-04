@@ -1,9 +1,9 @@
 package com.soulballad.usage.p3.message;
 
-public abstract class AbastractMessage {
+public abstract class AbstractMessage {
     private IMessage message;
 
-    public AbastractMessage(IMessage message) {
+    public AbstractMessage(IMessage message) {
         this.message = message;
     }
 

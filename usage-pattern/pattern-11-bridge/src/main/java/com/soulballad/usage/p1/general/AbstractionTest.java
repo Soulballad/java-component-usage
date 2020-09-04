@@ -1,7 +1,11 @@
 package com.soulballad.usage.p1.general;
 
-public class Test {
-    public static void main(String[] args) {
+import org.junit.Test;
+
+public class AbstractionTest {
+
+    @Test
+    public void test_abstraction() {
         // 来一个实现化角色
         IImplementor imp = new ConcreteImplementorA();
         // 来一个抽象化角色，聚合实现

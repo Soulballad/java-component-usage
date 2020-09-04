@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class Test {
+public class JdbcConnectTest {
     public static void main(String[] args) {
         try {
             // 1.加载驱动
@@ -16,7 +16,7 @@ public class Test {
             // 3.得到执行sql语句的对象Statement
             Statement stmt = conn.createStatement();
             // 4.执行sql语句，并返回结果
-            ResultSet rs = stmt.executeQuery("select *from table");
+            ResultSet rs = stmt.executeQuery("select * from table");
         } catch (Exception e) {
             e.printStackTrace();
         }
