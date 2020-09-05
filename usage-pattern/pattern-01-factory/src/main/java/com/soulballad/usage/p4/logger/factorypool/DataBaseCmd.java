@@ -10,8 +10,6 @@ import java.util.List;
  * 数据库操作类 包含两个构造函数 <br/>
  * <b><font color="red">DataBaseCmd()</font></b> 使用自定义连接池获得连接<br/>
  * <b><font color="red">DataBaseCmd(String datasource)</font></b> 指定 JNDI 的数据源名称
- *
- * @author tanyongde
  */
 public class DataBaseCmd {
 

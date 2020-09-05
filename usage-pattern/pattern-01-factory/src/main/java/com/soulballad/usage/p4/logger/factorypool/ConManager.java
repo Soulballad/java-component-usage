@@ -7,8 +7,6 @@ import java.sql.Connection;
 
 /**
  * 数据库连接管理类
- *
- * @author tanyongde
  */
 public class ConManager {
 

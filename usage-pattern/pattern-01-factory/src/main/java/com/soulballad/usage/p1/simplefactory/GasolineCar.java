@@ -1,8 +1,9 @@
 package com.soulballad.usage.p1.simplefactory;
 
-public class ElectricCar implements ICar {
+public class GasolineCar implements ICar {
+
     @Override
     public void produce() {
-        System.out.println("生产电动车");
+        System.out.println("生产燃油车");
     }
 }

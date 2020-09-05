@@ -1,11 +1,5 @@
 package com.soulballad.usage.p1.general;
 
-/**
- * @author ：soulballad
- * @version : v1.0
- * @apiNote : builder
- * @since ：2020/9/2 20:41
- */
 public class CarBuilder {
 
     private Car car = new Car();

@@ -4,6 +4,6 @@ public class ElectricCar implements ICar {
 
     @Override
     public void produce() {
-        System.out.println("生产电子汽车");
+        System.out.println("生产电动车");
     }
 }

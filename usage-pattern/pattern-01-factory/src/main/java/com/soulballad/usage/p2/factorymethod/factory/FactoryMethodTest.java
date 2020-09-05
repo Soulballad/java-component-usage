@@ -1,10 +1,13 @@
 package com.soulballad.usage.p2.factorymethod.factory;
 
+import org.junit.Test;
+
 public class FactoryMethodTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void test_factoryMethod() {
 
-        ICarFactory policeCarFactory = new PoliceCarFactory();
+        ICarFactory policeCarFactory = new GasolineCarFactory();
         policeCarFactory.getCar().produce();
 
         ElectricCarFactory electricCarFactory = new ElectricCarFactory();

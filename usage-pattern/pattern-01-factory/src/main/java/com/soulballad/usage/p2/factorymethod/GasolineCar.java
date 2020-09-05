@@ -1,9 +1,9 @@
 package com.soulballad.usage.p2.factorymethod;
 
-public class PoliceCar implements ICar {
+public class GasolineCar implements ICar {
 
     @Override
     public void produce() {
-        System.out.println("生产警用汽车");
+        System.out.println("生产燃油车");
     }
 }

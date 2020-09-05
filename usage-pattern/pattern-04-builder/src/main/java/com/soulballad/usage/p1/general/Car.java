@@ -1,11 +1,5 @@
 package com.soulballad.usage.p1.general;
 
-/**
- * @author ：soulballad
- * @version : v1.0
- * @apiNote : car
- * @since ：2020/9/2 20:36
- */
 public class Car {
     // 车门
     private String door;

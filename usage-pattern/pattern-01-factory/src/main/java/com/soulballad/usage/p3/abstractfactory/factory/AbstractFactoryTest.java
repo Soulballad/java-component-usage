@@ -1,15 +1,18 @@
 package com.soulballad.usage.p3.abstractfactory.factory;
 
+import org.junit.Test;
+
 public class AbstractFactoryTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void test_abstractFactory() {
 
         AudiCarFactory audiCarFactory = new AudiCarFactory();
-        audiCarFactory.getPoliceCar().ring();
+        audiCarFactory.getPoliceCar().refuel();
         audiCarFactory.getElectricCar().charge();
 
         BenzCarFactory benzCarFactory = new BenzCarFactory();
-        benzCarFactory.getPoliceCar().ring();
+        benzCarFactory.getPoliceCar().refuel();
         benzCarFactory.getElectricCar().charge();
     }
 }
