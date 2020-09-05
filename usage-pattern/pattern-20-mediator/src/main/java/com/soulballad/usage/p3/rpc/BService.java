@@ -1,9 +1,9 @@
 package com.soulballad.usage.p3.rpc;
 
 public class BService implements IService {
-    Registy registy;
+    Registry registry;
 
     BService() {
-        registy.regist("bService", this);
+        registry.register("bService", this);
     }
 }

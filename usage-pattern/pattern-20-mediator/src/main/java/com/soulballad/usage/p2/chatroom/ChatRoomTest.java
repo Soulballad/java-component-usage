@@ -1,7 +1,11 @@
 package com.soulballad.usage.p2.chatroom;
 
-public class Test {
-    public static void main(String[] args) {
+import org.junit.Test;
+
+public class ChatRoomTest {
+
+    @Test
+    public void test_chatRoom() {
         ChatRoom chatRoom = new ChatRoom();
 
         User tom = new User("Tom", chatRoom);

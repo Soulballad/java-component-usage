@@ -6,10 +6,10 @@ package com.soulballad.usage.p3.rpc;
  *
  * 伪代码 Created by Tom.
  */
-public class Registy {
+public class Registry {
     // 通过中介者缩短调用链
     // 服务治理
-    public boolean regist(String serviceName, IService service) {
+    public boolean register(String serviceName, IService service) {
         return true;
     }
 

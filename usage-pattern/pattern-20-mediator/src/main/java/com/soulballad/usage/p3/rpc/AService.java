@@ -1,10 +1,10 @@
 package com.soulballad.usage.p3.rpc;
 
 public class AService implements IService {
-    Registy registy;
+    Registry registy;
 
     AService() {
-        registy.regist("aService", this);
+        registy.register("aService", this);
     }
 
     public void a() {

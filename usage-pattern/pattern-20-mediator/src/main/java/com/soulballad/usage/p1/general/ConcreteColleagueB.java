@@ -4,7 +4,7 @@ package com.soulballad.usage.p1.general;
 public class ConcreteColleagueB extends Colleague {
     public ConcreteColleagueB(Mediator mediator) {
         super(mediator);
-        this.mediator.setColleageB(this);
+        this.mediator.setColleagueB(this);
     }
 
     // 自有方法：self-Method

@@ -5,11 +5,11 @@ public abstract class Mediator {
     protected ConcreteColleagueA colleagueA;
     protected ConcreteColleagueB colleagueB;
 
-    public void setColleageA(ConcreteColleagueA colleague) {
+    public void setColleagueA(ConcreteColleagueA colleague) {
         this.colleagueA = colleague;
     }
 
-    public void setColleageB(ConcreteColleagueB colleague) {
+    public void setColleagueB(ConcreteColleagueB colleague) {
         this.colleagueB = colleague;
     }
 

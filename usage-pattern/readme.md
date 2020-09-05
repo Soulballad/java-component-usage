@@ -17,7 +17,7 @@
 - **pattern-17-command**: 命令模式
 - **pattern-18-state**: 状态模式
 - **pattern-19-memento**: 备忘录模式
-- **pattern-20-mediator**: 终结者模式
+- **pattern-20-mediator**: 中介者模式
 - **pattern-21-interpreter**: 解释器模式
 - **pattern-22-observer**: 观察者模式
 - **pattern-23-visitor**: 访问者模式

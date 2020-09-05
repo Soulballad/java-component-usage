@@ -1,10 +1,10 @@
 package com.soulballad.usage.p3.rpc;
 
 public class CService implements IService {
-    Registy registy;
+    Registry registry;
 
     CService() {
-        registy.regist("cService", this);
+        registry.register("cService", this);
     }
 
 }
