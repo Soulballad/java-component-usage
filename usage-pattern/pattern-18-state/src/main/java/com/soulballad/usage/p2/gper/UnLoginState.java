@@ -16,6 +16,6 @@ public class UnLoginState extends UserState {
 
     private void switch2login() {
         System.out.println("跳转到登录页！");
-        this.context.setState(this.context.STATE_LOGIN);
+        this.context.setState(AppContext.STATE_LOGIN);
     }
 }

@@ -5,13 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
-public class Test {
+public class OrderStateApplication {
     public static void main(String[] args) {
 
         Thread.currentThread().setName("主线程");
 
-        ConfigurableApplicationContext context = SpringApplication.run(Test.class, args);
-
+        ConfigurableApplicationContext context = SpringApplication.run(OrderStateApplication.class, args);
         IOrderService orderService = (IOrderService)context.getBean("orderService");
 
         orderService.create();
@@ -32,6 +31,5 @@ public class Test {
         orderService.receive(2);
 
         System.out.println("全部订单状态：" + orderService.getOrders());
-
     }
 }

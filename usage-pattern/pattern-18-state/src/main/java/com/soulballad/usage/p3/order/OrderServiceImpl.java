@@ -1,14 +1,14 @@
 package com.soulballad.usage.p3.order;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.statemachine.persist.StateMachinePersister;
 import org.springframework.stereotype.Service;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @Service("orderService")
 public class OrderServiceImpl implements IOrderService {
@@ -22,6 +22,7 @@ public class OrderServiceImpl implements IOrderService {
     private int id = 1;
     private Map<Integer, Order> orders = new HashMap<>();
 
+    @Override
     public Order create() {
         Order order = new Order();
         order.setStatus(OrderStatus.WAIT_PAYMENT);
@@ -30,6 +31,7 @@ public class OrderServiceImpl implements IOrderService {
         return order;
     }
 
+    @Override
     public Order pay(int id) {
         Order order = orders.get(id);
         System.out.println("线程名称：" + Thread.currentThread().getName() + " 尝试支付，订单号：" + id);
@@ -40,26 +42,29 @@ public class OrderServiceImpl implements IOrderService {
         return orders.get(id);
     }
 
+    @Override
     public Order deliver(int id) {
         Order order = orders.get(id);
         System.out.println("线程名称：" + Thread.currentThread().getName() + " 尝试发货，订单号：" + id);
         if (!sendEvent(MessageBuilder.withPayload(OrderStatusChangeEvent.DELIVERY).setHeader("order", order).build(),
-            orders.get(id))) {
+                orders.get(id))) {
             System.out.println("线程名称：" + Thread.currentThread().getName() + " 发货失败，状态异常，订单号：" + id);
         }
         return orders.get(id);
     }
 
+    @Override
     public Order receive(int id) {
         Order order = orders.get(id);
         System.out.println("线程名称：" + Thread.currentThread().getName() + " 尝试收货，订单号：" + id);
         if (!sendEvent(MessageBuilder.withPayload(OrderStatusChangeEvent.RECEIVED).setHeader("order", order).build(),
-            orders.get(id))) {
+                orders.get(id))) {
             System.out.println("线程名称：" + Thread.currentThread().getName() + " 收货失败，状态异常，订单号：" + id);
         }
         return orders.get(id);
     }
 
+    @Override
     public Map<Integer, Order> getOrders() {
         return orders;
     }

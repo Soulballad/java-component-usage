@@ -6,6 +6,7 @@ public class Context {
     public static final State STATE_B = new ConcreteStateB();
     // 默认状态A
     private State currentState = STATE_A;
+
     {
         STATE_A.setContext(this);
         STATE_B.setContext(this);
