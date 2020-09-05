@@ -7,6 +7,7 @@ public class Manager extends Employee {
         super(name);
     }
 
+    @Override
     public void accept(IVisitor visitor) {
         visitor.visit(this);
     }

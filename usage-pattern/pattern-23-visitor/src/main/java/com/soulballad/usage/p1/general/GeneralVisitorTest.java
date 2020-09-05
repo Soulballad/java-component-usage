@@ -1,8 +1,11 @@
 package com.soulballad.usage.p1.general;
 
-public class Test {
+import org.junit.Test;
 
-    public static void main(String[] args) {
+public class GeneralVisitorTest {
+
+    @Test
+    public void test_visitor() {
         ObjectStructure collection = new ObjectStructure();
         System.out.println("ConcreteVisitorA handle elements:");
         IVisitor visitorA = new ConcreteVisitorA();
@@ -12,5 +15,4 @@ public class Test {
         IVisitor visitorB = new ConcreteVisitorB();
         collection.accept(visitorB);
     }
-
 }

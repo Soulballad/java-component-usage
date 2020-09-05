@@ -13,11 +13,10 @@ public class FileVisitorTest {
     public static void main(String[] args) {
         try {
             // 使用FileVisitor对目录进行遍历
-            Files.walkFileTree(Paths.get("E:", "WORKSPACE/gupaoedu-vip-pattern/gupaoedu-vip-pattern-visitor"),
+            Files.walkFileTree(Paths.get("E:", "GitRepository/self/java-component-usage/usage-pattern/pattern-23-visitor"),
                 new SimpleFileVisitor<Path>() {
 
                     // 在访问子目录前触发该方法
-
                     @Override
                     public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
                         System.out.println("正在访问" + dir + "目录");

@@ -1,7 +1,11 @@
 package com.soulballad.usage.p3.dispatch.dymdispatch;
 
-public class Main {
-    public static void main(String[] args) {
+import org.junit.Test;
+
+public class DymDispatchTest {
+
+    @Test
+    public void test_dymDispatch() {
         Person man = new Man();
         Person woman = new WoMan();
 

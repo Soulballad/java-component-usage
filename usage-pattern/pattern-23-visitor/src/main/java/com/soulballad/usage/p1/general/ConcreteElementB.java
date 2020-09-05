@@ -5,6 +5,7 @@ import java.util.Random;
 // 具体元素
 public class ConcreteElementB implements IElement {
 
+    @Override
     public void accept(IVisitor visitor) {
         visitor.visit(this);
     }

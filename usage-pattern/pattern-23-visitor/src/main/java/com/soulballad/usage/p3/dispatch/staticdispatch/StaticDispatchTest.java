@@ -1,6 +1,8 @@
 package com.soulballad.usage.p3.dispatch.staticdispatch;
 
-public class Main {
+import org.junit.Test;
+
+public class StaticDispatchTest {
     public void test(String string) {
         System.out.println("string" + string);
     }
@@ -9,10 +11,11 @@ public class Main {
         System.out.println("integer" + integer);
     }
 
-    public static void main(String[] args) {
+    @Test
+    public void test_staticDispatch() {
         String string = "1";
         Integer integer = 1;
-        Main main = new Main();
+        StaticDispatchTest main = new StaticDispatchTest();
         main.test(integer);
         main.test(string);
     }
