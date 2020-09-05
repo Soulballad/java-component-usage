@@ -2,12 +2,6 @@ package com.soulballad.usage.p1.general;
 
 import java.util.List;
 
-/**
- * @author Soulballad
- * @date 2019/3/18/0018 19:35
- * @email soda931vzr@163.com
- * @description
- */
 public class ConcretePrototypeA implements Prototype {
 
     private int id;

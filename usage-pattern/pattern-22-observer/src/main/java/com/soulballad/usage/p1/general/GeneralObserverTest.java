@@ -2,9 +2,6 @@ package com.soulballad.usage.p1.general;
 
 import org.junit.Test;
 
-/**
- * Created by Tom.
- */
 public class GeneralObserverTest {
 
     @Test

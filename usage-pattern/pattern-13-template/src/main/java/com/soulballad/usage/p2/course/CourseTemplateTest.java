@@ -2,7 +2,9 @@ package com.soulballad.usage.p2.course;
 
 import org.junit.Test;
 
-/** Created by Tom. */
+/**
+ *
+ */
 public class CourseTemplateTest {
 
     @Test

@@ -1,6 +1,5 @@
 package com.soulballad.usage.p3.mvc;
 
-
 import com.soulballad.usage.p3.mvc.controllers.MemberController;
 
 import javax.servlet.ServletException;
@@ -12,16 +11,13 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by Tom.
- */
 public class DispatcherServlet extends HttpServlet {
 
-    private Map<String,Method> handlerMapping = new HashMap<String,Method>();
+    private Map<String, Method> handlerMapping = new HashMap<String, Method>();
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doDispatch(req,resp);
+        doDispatch(req, resp);
     }
 
     private void doDispatch(HttpServletRequest req, HttpServletResponse resp) {
@@ -34,7 +30,7 @@ public class DispatcherServlet extends HttpServlet {
     public void init() throws ServletException {
         try {
             handlerMapping.put("/web/getMemeberById.json", MemberController.class.getMethod("getMemberById", new Class[]{String.class}));
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

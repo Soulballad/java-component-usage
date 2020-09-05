@@ -11,7 +11,7 @@ public class OrderStateApplication {
         Thread.currentThread().setName("主线程");
 
         ConfigurableApplicationContext context = SpringApplication.run(OrderStateApplication.class, args);
-        IOrderService orderService = (IOrderService)context.getBean("orderService");
+        IOrderService orderService = (IOrderService) context.getBean("orderService");
 
         orderService.create();
         orderService.create();

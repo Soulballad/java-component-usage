@@ -3,7 +3,6 @@ package com.soulballad.usage.p4.logger;
 import org.slf4j.Logger;
 import org.slf4j.Marker;
 
-
 public class LoggerDecorator implements Logger {
 
     protected Logger logger;

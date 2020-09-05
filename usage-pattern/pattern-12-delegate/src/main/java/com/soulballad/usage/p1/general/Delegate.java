@@ -1,7 +1,10 @@
 package com.soulballad.usage.p1.general;
 
 import java.util.Random;
-/** 代理角色 */
+
+/**
+ * 代理角色
+ */
 public class Delegate implements Task {
     @Override
     public void doTask() {

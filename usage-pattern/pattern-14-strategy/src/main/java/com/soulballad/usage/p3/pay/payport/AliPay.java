@@ -1,8 +1,5 @@
 package com.soulballad.usage.p3.pay.payport;
 
-/**
- * Created by Tom.
- */
 public class AliPay extends Payment {
     @Override
     public String getName() {

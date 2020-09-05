@@ -3,9 +3,6 @@ package com.soulballad.usage.p3.passport.upgrade;
 import com.soulballad.usage.p3.passport.old.ISigninService;
 import com.soulballad.usage.p3.passport.old.ResultMsg;
 
-/**
- * Created by Tom on 2019/3/17.
- */
 public interface ISiginForThirdService extends ISigninService {
 
     /**

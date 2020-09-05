@@ -5,12 +5,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
-/**
- * @author Soulballad
- * @date 2019/3/10/0010 15:12
- * @email soda931vzr@163.com
- * @description
- */
 public class ConcurrentExecutor {
 
     public static void execute(final RunHandler runHandler, int executeCount, int concurrentCount) throws Exception {

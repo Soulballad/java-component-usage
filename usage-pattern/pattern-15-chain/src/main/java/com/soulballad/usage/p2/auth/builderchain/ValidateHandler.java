@@ -1,8 +1,7 @@
 package com.soulballad.usage.p2.auth.builderchain;
 
-import org.apache.commons.lang3.StringUtils;
-
 import com.soulballad.usage.p2.auth.Member;
+import org.apache.commons.lang3.StringUtils;
 
 public class ValidateHandler extends Handler {
     @Override

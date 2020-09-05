@@ -1,14 +1,11 @@
 package com.soulballad.usage.p6.attack.reflect;
 
-import java.lang.reflect.Constructor;
-
 import com.soulballad.usage.p2.lazy.LazyInnerClassSingleton;
 
+import java.lang.reflect.Constructor;
+
 /**
- * @author Soulballad
- * @date 2019/3/10/0010 11:44
- * @email soda931vzr@163.com
- * @description 通过反射对单例进行攻击，发现创建了2个对象，单例被破坏
+ * 通过反射对单例进行攻击，发现创建了2个对象，单例被破坏
  */
 public class SingletonReflectAttack {
 

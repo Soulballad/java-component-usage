@@ -1,12 +1,8 @@
 package com.soulballad.usage.p3.pay;
 
-
 import com.soulballad.usage.p3.pay.payport.PayStrategy;
 import com.soulballad.usage.p3.pay.payport.Payment;
 
-/**
- * Created by Tom.
- */
 public class Order {
     private String uid;
     private String orderId;
@@ -18,14 +14,14 @@ public class Order {
         this.amount = amount;
     }
 
-    public MsgResult pay(){
+    public MsgResult pay() {
         return pay(PayStrategy.DEFAULT_PAY);
     }
 
-    public MsgResult pay(String payKey){
+    public MsgResult pay(String payKey) {
         Payment payment = PayStrategy.get(payKey);
         System.out.println("欢迎使用" + payment.getName());
         System.out.println("本次交易金额为" + amount + "，开始扣款");
-        return payment.pay(uid,amount);
+        return payment.pay(uid, amount);
     }
 }

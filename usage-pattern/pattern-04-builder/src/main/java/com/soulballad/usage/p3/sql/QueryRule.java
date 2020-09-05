@@ -6,8 +6,6 @@ import java.util.List;
 
 /**
  * QueryRule,主要功能用于构造查询条件
- * 
- *
  */
 public final class QueryRule implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -33,7 +31,8 @@ public final class QueryRule implements Serializable {
     private final List<QueryRule> queryRuleList = new ArrayList<QueryRule>();
     private String propertyName;
 
-    private QueryRule() {}
+    private QueryRule() {
+    }
 
     private QueryRule(String propertyName) {
         this.propertyName = propertyName;
@@ -45,7 +44,7 @@ public final class QueryRule implements Serializable {
 
     /**
      * 添加升序规则
-     * 
+     *
      * @param propertyName
      * @return
      */
@@ -56,7 +55,7 @@ public final class QueryRule implements Serializable {
 
     /**
      * 添加降序规则
-     * 
+     *
      * @param propertyName
      * @return
      */

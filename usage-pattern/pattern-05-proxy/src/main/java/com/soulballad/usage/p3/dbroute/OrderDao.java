@@ -1,11 +1,5 @@
 package com.soulballad.usage.p3.dbroute;
 
-/**
- * @author Soulballad
- * @date 2019/3/18/0018 21:06
- * @email soda931vzr@163.com
- * @description
- */
 public class OrderDao {
 
     public int insert(Order order) {

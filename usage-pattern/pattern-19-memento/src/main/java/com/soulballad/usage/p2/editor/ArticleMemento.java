@@ -26,6 +26,6 @@ public class ArticleMemento {
     @Override
     public String toString() {
         return "ArticleMemento{" + "title='" + title + '\'' + ", content='" + content + '\'' + ", imgs='" + imgs + '\''
-            + '}';
+                + '}';
     }
 }

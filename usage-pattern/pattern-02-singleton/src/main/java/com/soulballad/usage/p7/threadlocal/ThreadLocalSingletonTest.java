@@ -1,11 +1,5 @@
 package com.soulballad.usage.p7.threadlocal;
 
-/**
- * @author Soulballad
- * @date 2019/3/10/0010 15:24
- * @email soda931vzr@163.com
- * @description
- */
 public class ThreadLocalSingletonTest {
 
     class ExecutorThread implements Runnable {

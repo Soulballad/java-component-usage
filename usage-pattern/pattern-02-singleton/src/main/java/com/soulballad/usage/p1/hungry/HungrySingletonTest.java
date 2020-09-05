@@ -2,12 +2,6 @@ package com.soulballad.usage.p1.hungry;
 
 import org.junit.Test;
 
-/**
- * @author Soulballad
- * @date 2019/3/10/0010 10:48
- * @email soda931vzr@163.com
- * @description 饿汉式单例的常见写法
- */
 public class HungrySingletonTest {
 
     @Test

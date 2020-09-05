@@ -2,12 +2,6 @@ package com.soulballad.usage.p2.deep;
 
 import java.io.Serializable;
 
-/**
- * @author Soulballad
- * @date 2019/3/18/0018 19:47
- * @email soda931vzr@163.com
- * @description
- */
 public class JinGuBang implements Serializable {
 
     public float h = 100;

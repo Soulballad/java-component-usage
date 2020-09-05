@@ -2,9 +2,6 @@ package com.soulballad.usage.p3.mouseevent.core;
 
 import java.lang.reflect.Method;
 
-/**
- * Created by Tom.
- */
 public class Event {
     //事件源，动作是由谁发出的
     private Object source;

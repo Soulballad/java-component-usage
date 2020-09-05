@@ -2,12 +2,6 @@ package com.soulballad.usage.p3.passport.upgrade;
 
 import com.soulballad.usage.p3.passport.old.ResultMsg;
 
-/**
- * @author Soulballad
- * @date 2019/3/23/0023 15:50
- * @email soda931vzr@163.com
- * @description
- */
 public class SiginForThirdService implements ISiginForThirdService {
 
     @Override

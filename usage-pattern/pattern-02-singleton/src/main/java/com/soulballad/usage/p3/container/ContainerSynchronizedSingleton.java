@@ -4,14 +4,12 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @author Soulballad
- * @date 2019/3/10/0010 15:04
- * @email soda931vzr@163.com
- * @description 容器式单例，使用Synchronized关键字使线程安全
+ * 容器式单例，使用Synchronized关键字使线程安全
  */
 public class ContainerSynchronizedSingleton {
 
-    private ContainerSynchronizedSingleton() {}
+    private ContainerSynchronizedSingleton() {
+    }
 
     private static Map<String, Object> container = new ConcurrentHashMap<String, Object>();
 

@@ -1,8 +1,5 @@
 package com.soulballad.usage.p3.jdbc.entity;
 
-/**
- * Created by Tom.
- */
 public class Member {
 
     private String username;

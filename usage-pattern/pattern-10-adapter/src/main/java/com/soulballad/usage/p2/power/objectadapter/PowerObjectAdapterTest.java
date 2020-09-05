@@ -1,6 +1,5 @@
 package com.soulballad.usage.p2.power.objectadapter;
 
-
 import org.junit.Test;
 
 public class PowerObjectAdapterTest {

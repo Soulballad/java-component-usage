@@ -1,6 +1,5 @@
 package com.soulballad.usage.p2.passport.adapterv2;
 
-
 import com.soulballad.usage.p2.passport.ResultMsg;
 import com.soulballad.usage.p2.passport.adapterv2.adapters.ILoginAdapter;
 import com.soulballad.usage.p2.passport.adapterv2.adapters.LoginForQQAdapter;
@@ -29,7 +28,6 @@ public class PassportForThirdAdapter implements IPassportForThird {
     public ResultMsg loginForTelPhone(String phone, String code) {
         return processLogin(phone, LoginForTelAdapter.class);
     }
-
 
     private ResultMsg processLogin(String id, Class<? extends ILoginAdapter> clazz) {
         try {

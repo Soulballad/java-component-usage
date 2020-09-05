@@ -1,14 +1,10 @@
 package com.soulballad.usage.p3.mouseevent;
 
-
 import com.soulballad.usage.p3.mouseevent.handler.Mouse;
 import com.soulballad.usage.p3.mouseevent.handler.MouseEventListener;
 import com.soulballad.usage.p3.mouseevent.handler.MouseEventType;
 import org.junit.Test;
 
-/**
- * Created by Tom.
- */
 public class MouseEventTest {
 
     @Test

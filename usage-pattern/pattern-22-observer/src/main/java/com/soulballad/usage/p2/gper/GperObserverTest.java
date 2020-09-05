@@ -2,9 +2,6 @@ package com.soulballad.usage.p2.gper;
 
 import org.junit.Test;
 
-/**
- * Created by Tom.
- */
 public class GperObserverTest {
 
     @Test

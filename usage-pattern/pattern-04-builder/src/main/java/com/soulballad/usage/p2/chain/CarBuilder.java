@@ -1,7 +1,5 @@
 package com.soulballad.usage.p2.chain;
 
-import com.soulballad.usage.p1.general.Car;
-
 /**
  * @author ：soulballad
  * @version : v1.0

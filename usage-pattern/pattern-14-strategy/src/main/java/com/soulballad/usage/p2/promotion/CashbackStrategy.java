@@ -1,8 +1,5 @@
 package com.soulballad.usage.p2.promotion;
 
-/**
- * Created by Tom.
- */
 public class CashbackStrategy implements IPromotionStrategy {
     @Override
     public void doPromotion() {

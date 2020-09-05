@@ -1,11 +1,5 @@
 package com.soulballad.usage.p4.logger.enumtype;
 
-/**
- * @author Soulballad
- * @date 2019/3/10/0010 14:33
- * @email soda931vzr@163.com
- * @description
- */
 public class EnumSingletonTest {
 
     public static void main(String[] args) {

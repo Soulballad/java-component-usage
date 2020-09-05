@@ -1,11 +1,5 @@
 package com.soulballad.usage.p3.passport.old;
 
-/**
- * @author Soulballad
- * @date 2019/3/23/0023 10:59
- * @email soda931vzr@163.com
- * @description
- */
 public class Member {
 
     private String username;

@@ -2,9 +2,6 @@ package com.soulballad.usage.p2.promotion;
 
 import org.junit.Test;
 
-/**
- * Created by Tom.
- */
 public class PromotionStrategyTest {
 
     @Test

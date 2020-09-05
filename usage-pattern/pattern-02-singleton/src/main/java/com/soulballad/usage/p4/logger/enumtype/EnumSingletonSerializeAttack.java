@@ -6,10 +6,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 /**
- * @author Soulballad
- * @date 2019/3/10/0010 14:43
- * @email soda931vzr@163.com
- * @description 使用序列化攻击枚举式单例，发现没有风险
+ * 使用序列化攻击枚举式单例，发现没有风险
  */
 public class EnumSingletonSerializeAttack {
 
@@ -26,7 +23,7 @@ public class EnumSingletonSerializeAttack {
             oos.close();
 
             ObjectInputStream ois = new ObjectInputStream(new FileInputStream("EnumSingleton.obj"));
-            EnumSingleton singleton = (EnumSingleton)ois.readObject();
+            EnumSingleton singleton = (EnumSingleton) ois.readObject();
 
             System.out.println(instance.getData() == singleton.getData());
 

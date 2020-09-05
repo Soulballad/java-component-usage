@@ -1,5 +1,8 @@
 package com.soulballad.usage.p2.dynamicproxy.gpproxy;
 
+import javax.tools.JavaCompiler;
+import javax.tools.StandardJavaFileManager;
+import javax.tools.ToolProvider;
 import java.io.File;
 import java.io.FileWriter;
 import java.lang.reflect.Constructor;
@@ -7,16 +10,6 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.tools.JavaCompiler;
-import javax.tools.StandardJavaFileManager;
-import javax.tools.ToolProvider;
-
-/**
- * @author Soulballad
- * @date 2019/3/18/0018 21:50
- * @email soda931vzr@163.com
- * @description
- */
 public class GPProxy {
 
     private static final String Ln = "\r\n";
@@ -93,13 +86,13 @@ public class GPProxy {
             }
 
             sb.append("public " + method.getReturnType().getName() + " " + method.getName() + "("
-                + paramNames.toString() + ") {" + Ln);
+                    + paramNames.toString() + ") {" + Ln);
             sb.append("try{" + Ln);
             sb.append("Method m = " + interfaces[0].getName() + ".class.getMethod(\"" + method.getName()
-                + "\",new Class[]{" + paramClasses.toString() + "});" + Ln);
+                    + "\",new Class[]{" + paramClasses.toString() + "});" + Ln);
             sb.append((hasReturnValue(method.getReturnType()) ? "return " : "")
-                + getCaseCode("this.h.invoke(this,m,new Object[]{" + paramValuess + "})", method.getReturnType()) + ";"
-                + Ln);
+                    + getCaseCode("this.h.invoke(this,m,new Object[]{" + paramValuess + "})", method.getReturnType()) + ";"
+                    + Ln);
             sb.append("}catch(Error _ex) { }");
             sb.append("catch(Throwable e){" + Ln);
             sb.append("throw new UndeclaredThrowableException(e);" + Ln);
@@ -112,6 +105,7 @@ public class GPProxy {
     }
 
     private static Map<Class, Class> mappings = new HashMap<Class, Class>();
+
     static {
         mappings.put(int.class, Integer.class);
     }
@@ -129,7 +123,7 @@ public class GPProxy {
     private static String getCaseCode(String code, Class<?> returnClass) {
         if (mappings.containsKey(returnClass)) {
             return "((" + mappings.get(returnClass).getName() + ")" + code + ")." + returnClass.getSimpleName()
-                + "Value()";
+                    + "Value()";
         }
         return code;
     }

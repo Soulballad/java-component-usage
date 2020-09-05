@@ -10,7 +10,6 @@ import java.io.FileReader;
 import java.io.InputStream;
 import java.io.StringReader;
 
-
 public class LogDecoratorTest {
     //    private static final Logger logger = LoggerFactory.getLogger(Test.class);
     private static final Logger logger = JsonLoggerFactory.getLogger(LogDecoratorTest.class);

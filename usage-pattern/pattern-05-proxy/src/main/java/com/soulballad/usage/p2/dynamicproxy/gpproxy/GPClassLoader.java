@@ -4,12 +4,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 
-/**
- * @author Soulballad
- * @date 2019/3/18/0018 21:50
- * @email soda931vzr@163.com
- * @description
- */
 public class GPClassLoader extends ClassLoader {
 
     private File classPathFile;

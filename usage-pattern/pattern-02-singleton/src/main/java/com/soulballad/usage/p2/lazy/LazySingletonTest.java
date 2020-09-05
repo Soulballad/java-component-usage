@@ -3,10 +3,7 @@ package com.soulballad.usage.p2.lazy;
 import org.junit.Test;
 
 /**
- * @author Soulballad
- * @date 2019/3/10/0010 10:48
- * @email soda931vzr@163.com
- * @description 单例的常见写法
+ * 单例的常见写法
  */
 public class LazySingletonTest {
 

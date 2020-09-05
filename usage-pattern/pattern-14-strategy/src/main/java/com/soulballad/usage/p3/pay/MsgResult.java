@@ -1,8 +1,5 @@
 package com.soulballad.usage.p3.pay;
 
-/**
- * Created by Tom.
- */
 public class MsgResult {
     private int code;
     private Object data;

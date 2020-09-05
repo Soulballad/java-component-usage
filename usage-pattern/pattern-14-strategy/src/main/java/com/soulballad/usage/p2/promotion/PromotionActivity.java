@@ -1,8 +1,5 @@
 package com.soulballad.usage.p2.promotion;
 
-/**
- * Created by Tom.
- */
 public class PromotionActivity {
     private IPromotionStrategy strategy;
 
@@ -10,7 +7,7 @@ public class PromotionActivity {
         this.strategy = strategy;
     }
 
-    public void execute(){
+    public void execute() {
         strategy.doPromotion();
     }
 }

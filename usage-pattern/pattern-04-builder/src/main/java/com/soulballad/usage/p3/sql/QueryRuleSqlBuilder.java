@@ -1,5 +1,8 @@
 package com.soulballad.usage.p3.sql;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -7,14 +10,8 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.commons.lang3.ArrayUtils;
-import org.apache.commons.lang3.StringUtils;
-
 /**
  * 根据QueryRule自动构建sql语句
- * 
- *
- *
  */
 public class QueryRuleSqlBuilder {
     private int CURR_INDEX = 0; // 记录参数所在的位置
@@ -24,12 +21,12 @@ public class QueryRuleSqlBuilder {
 
     private String whereSql = "";
     private String orderSql = "";
-    private Object[] valueArr = new Object[] {};
+    private Object[] valueArr = new Object[]{};
     private final Map<Object, Object> valueMap = new HashMap<>();
 
     /**
      * 或得查询条件
-     * 
+     *
      * @return
      */
     private String getWhereSql() {
@@ -38,7 +35,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 获得排序条件
-     * 
+     *
      * @return
      */
     private String getOrderSql() {
@@ -47,7 +44,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 获得参数值列表
-     * 
+     *
      * @return
      */
     public Object[] getValues() {
@@ -56,7 +53,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 获取参数列表
-     * 
+     *
      * @return
      */
     private Map<Object, Object> getValueMap() {
@@ -65,7 +62,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 创建SQL构造器
-     * 
+     *
      * @param queryRule
      */
     public QueryRuleSqlBuilder(QueryRule queryRule) {
@@ -137,7 +134,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 去掉order
-     * 
+     *
      * @param sql
      * @return
      */
@@ -154,7 +151,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 去掉select
-     * 
+     *
      * @param sql
      * @return
      */
@@ -169,7 +166,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理like
-     * 
+     *
      * @param rule
      */
     private void processLike(QueryRule.Rule rule) {
@@ -190,7 +187,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理between
-     * 
+     *
      * @param rule
      */
     private void processBetween(QueryRule.Rule rule) {
@@ -203,7 +200,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理 =
-     * 
+     *
      * @param rule
      */
     private void processEqual(QueryRule.Rule rule) {
@@ -215,7 +212,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理 <>
-     * 
+     *
      * @param rule
      */
     private void processNotEqual(QueryRule.Rule rule) {
@@ -227,7 +224,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理 >
-     * 
+     *
      * @param rule
      */
     private void processGreaterThen(QueryRule.Rule rule) {
@@ -239,7 +236,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理>=
-     * 
+     *
      * @param rule
      */
     private void processGreaterEqual(QueryRule.Rule rule) {
@@ -251,7 +248,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理<
-     * 
+     *
      * @param rule
      */
     private void processLessThen(QueryRule.Rule rule) {
@@ -263,7 +260,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理<=
-     * 
+     *
      * @param rule
      */
     private void processLessEqual(QueryRule.Rule rule) {
@@ -275,7 +272,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理 is null
-     * 
+     *
      * @param rule
      */
     private void processIsNull(QueryRule.Rule rule) {
@@ -284,7 +281,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理 is not null
-     * 
+     *
      * @param rule
      */
     private void processIsNotNull(QueryRule.Rule rule) {
@@ -293,7 +290,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理 <>''
-     * 
+     *
      * @param rule
      */
     private void processIsNotEmpty(QueryRule.Rule rule) {
@@ -302,7 +299,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理 =''
-     * 
+     *
      * @param rule
      */
     private void processIsEmpty(QueryRule.Rule rule) {
@@ -311,7 +308,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理in和not in
-     * 
+     *
      * @param rule
      * @param name
      */
@@ -320,7 +317,7 @@ public class QueryRuleSqlBuilder {
             return;
         }
         if ((rule.getValues().length == 1) && (rule.getValues()[0] != null) && (rule.getValues()[0] instanceof List)) {
-            List<Object> list = (List)rule.getValues()[0];
+            List<Object> list = (List) rule.getValues()[0];
 
             if ((list != null) && (list.size() > 0)) {
                 for (int i = 0; i < list.size(); i++) {
@@ -357,7 +354,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理 not in
-     * 
+     *
      * @param rule
      */
     private void processNotIN(QueryRule.Rule rule) {
@@ -366,7 +363,7 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理 in
-     * 
+     *
      * @param rule
      */
     private void processIN(QueryRule.Rule rule) {
@@ -375,9 +372,8 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 处理 order by
-     * 
-     * @param rule
-     *            查询规则
+     *
+     * @param rule 查询规则
      */
     private void processOrder(QueryRule.Rule rule) {
         switch (rule.getType()) {
@@ -400,15 +396,11 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 加入到sql查询规则队列
-     * 
-     * @param andOr
-     *            and 或者 or
-     * @param key
-     *            列名
-     * @param split
-     *            列名与值之间的间隔
-     * @param value
-     *            值
+     *
+     * @param andOr and 或者 or
+     * @param key   列名
+     * @param split 列名与值之间的间隔
+     * @param value 值
      */
     private void add(int andOr, String key, String split, Object value) {
         add(andOr, key, split, "", value, "");
@@ -416,19 +408,13 @@ public class QueryRuleSqlBuilder {
 
     /**
      * 加入到sql查询规则队列
-     * 
-     * @param andOr
-     *            and 或则 or
-     * @param key
-     *            列名
-     * @param split
-     *            列名与值之间的间隔
-     * @param prefix
-     *            值前缀
-     * @param value
-     *            值
-     * @param suffix
-     *            值后缀
+     *
+     * @param andOr  and 或则 or
+     * @param key    列名
+     * @param split  列名与值之间的间隔
+     * @param prefix 值前缀
+     * @param value  值
+     * @param suffix 值后缀
      */
     private void add(int andOr, String key, String split, String prefix, Object value, String suffix) {
         String andOrStr = (0 == andOr ? "" : (QueryRule.AND == andOr ? " and " : " or "));

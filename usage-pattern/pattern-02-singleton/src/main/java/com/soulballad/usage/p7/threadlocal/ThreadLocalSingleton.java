@@ -1,10 +1,7 @@
 package com.soulballad.usage.p7.threadlocal;
 
 /**
- * @author Soulballad
- * @date 2019/3/10/0010 15:20
- * @email soda931vzr@163.com
- * @description 利用ThreadLocal创建单例，伪线程安全，对象在单个线程中是唯一的，多线程下无法保证单例
+ * 利用ThreadLocal创建单例，伪线程安全，对象在单个线程中是唯一的，多线程下无法保证单例
  */
 public class ThreadLocalSingleton {
 
@@ -15,7 +12,8 @@ public class ThreadLocalSingleton {
         }
     };
 
-    private ThreadLocalSingleton() {}
+    private ThreadLocalSingleton() {
+    }
 
     public static ThreadLocalSingleton getInstance() {
 

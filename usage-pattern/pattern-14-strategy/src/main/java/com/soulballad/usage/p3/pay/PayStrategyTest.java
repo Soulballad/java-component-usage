@@ -1,12 +1,8 @@
 package com.soulballad.usage.p3.pay;
 
-
 import com.soulballad.usage.p3.pay.payport.PayStrategy;
 import org.junit.Test;
 
-/**
- * Created by Tom.
- */
 public class PayStrategyTest {
 
     @Test

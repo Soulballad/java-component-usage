@@ -2,7 +2,6 @@ package com.soulballad.usage.p3.sql;
 
 /**
  * sql排序组件
- *
  */
 public class Order {
     private boolean ascending; // 升序还是降序

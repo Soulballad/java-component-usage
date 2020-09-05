@@ -3,10 +3,7 @@ package com.soulballad.usage.p6.attack.reflect;
 import java.lang.reflect.Constructor;
 
 /**
- * @author Soulballad
- * @date 2019/3/10/0010 11:59
- * @email soda931vzr@163.com
- * @description 静态内部类单例防御反射攻击，反射是通过构造函数来创建实例，那么需要判断实例是否已被创建，如果已创建则抛出异常
+ * 静态内部类单例防御反射攻击，反射是通过构造函数来创建实例，那么需要判断实例是否已被创建，如果已创建则抛出异常
  */
 public class LazyInnerClassSingletonAttackDefense {
 
@@ -28,7 +25,7 @@ public class LazyInnerClassSingletonAttackDefense {
     private static class LazyHolder {
 
         private static final LazyInnerClassSingletonAttackDefense singleton =
-            new LazyInnerClassSingletonAttackDefense();
+                new LazyInnerClassSingletonAttackDefense();
     }
 
     /**
@@ -39,12 +36,12 @@ public class LazyInnerClassSingletonAttackDefense {
     public static void main(String[] args) {
 
         Class<LazyInnerClassSingletonAttackDefense> innerClassSingletonClass =
-            LazyInnerClassSingletonAttackDefense.class;
+                LazyInnerClassSingletonAttackDefense.class;
 
         try {
 
             Constructor<LazyInnerClassSingletonAttackDefense> constructor =
-                innerClassSingletonClass.getDeclaredConstructor(null);
+                    innerClassSingletonClass.getDeclaredConstructor(null);
             constructor.setAccessible(true);
             LazyInnerClassSingletonAttackDefense singleton1 = constructor.newInstance();
 

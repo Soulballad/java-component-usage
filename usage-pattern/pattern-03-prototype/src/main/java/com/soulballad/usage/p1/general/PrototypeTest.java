@@ -3,12 +3,6 @@ package com.soulballad.usage.p1.general;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author Soulballad
- * @date 2019/3/18/0018 19:41
- * @email soda931vzr@163.com
- * @description
- */
 public class PrototypeTest {
 
     public static void main(String[] args) {
@@ -20,7 +14,7 @@ public class PrototypeTest {
         concretePrototypeA.setHobbies(hobbies);
 
         Client client = new Client(concretePrototypeA);
-        ConcretePrototypeA prototype = (ConcretePrototypeA)client.startClone(concretePrototypeA);
+        ConcretePrototypeA prototype = (ConcretePrototypeA) client.startClone(concretePrototypeA);
 
         System.out.println(prototype);
 

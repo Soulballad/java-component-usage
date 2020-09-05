@@ -1,11 +1,5 @@
 package com.soulballad.usage.p3.dbroute;
 
-/**
- * @author Soulballad
- * @date 2019/3/18/0018 21:11
- * @email soda931vzr@163.com
- * @description
- */
 public class DynamicDataSourceEntity {
 
     private static final ThreadLocal<String> local = new ThreadLocal<String>();

@@ -8,7 +8,7 @@ public class BuilderChainTest {
     public static void main(String[] args) {
 
         CarBuilder builder =
-            new CarBuilder().addDoor("防弹车门").addEngine("V8发动机").addLight("镭射强光灯").addWheel("防弹轮胎").addAirBag("安全气囊");
+                new CarBuilder().addDoor("防弹车门").addEngine("V8发动机").addLight("镭射强光灯").addWheel("防弹轮胎").addAirBag("安全气囊");
 
         System.out.println(builder.build());
 

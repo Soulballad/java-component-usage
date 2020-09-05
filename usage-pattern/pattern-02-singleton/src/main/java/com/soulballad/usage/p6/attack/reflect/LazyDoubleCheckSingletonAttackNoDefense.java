@@ -4,10 +4,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 
 /**
- * @author Soulballad
- * @date 2019/3/10/0010 12:23
- * @email soda931vzr@163.com
- * @description 懒汉式暂时无法防御反射攻击
+ * 懒汉式暂时无法防御反射攻击
  */
 public class LazyDoubleCheckSingletonAttackNoDefense {
 
@@ -54,12 +51,12 @@ public class LazyDoubleCheckSingletonAttackNoDefense {
     public static void main(String[] args) {
 
         Class<LazyDoubleCheckSingletonAttackNoDefense> attackDefenseClass =
-            LazyDoubleCheckSingletonAttackNoDefense.class;
+                LazyDoubleCheckSingletonAttackNoDefense.class;
 
         try {
 
             Constructor<LazyDoubleCheckSingletonAttackNoDefense> constructor =
-                attackDefenseClass.getDeclaredConstructor(null);
+                    attackDefenseClass.getDeclaredConstructor(null);
             Field field = attackDefenseClass.getDeclaredField("flag");
 
             constructor.setAccessible(true);

@@ -2,12 +2,6 @@ package com.soulballad.usage.p3.classwork;
 
 import java.util.Date;
 
-/**
- * @author Soulballad
- * @date 2019/3/18/0018 20:20
- * @email soda931vzr@163.com
- * @description
- */
 public class Person {
 
     private String name;
@@ -59,6 +53,6 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" + "name='" + name + '\'' + ", age=" + age + ", birthday=" + birthday + ", idCard='" + idCard
-            + '\'' + ", address='" + address + '\'' + '}';
+                + '\'' + ", address='" + address + '\'' + '}';
     }
 }

@@ -1,10 +1,5 @@
 package com.soulballad.usage.p3.abstractfactory.factory;
 
-/**
- * @author Soulballad
- * @date 2019/3/7/0007 16:57
- * @email soda931vzr@163.com
- */
 public class AbstractFactoryTest {
 
     public static void main(String[] args) {

@@ -1,11 +1,5 @@
 package com.soulballad.usage.p2.dynamicproxy.jdkproxy;
 
-/**
- * @author Soulballad
- * @date 2019/3/18/0018 21:27
- * @email soda931vzr@163.com
- * @description
- */
 public class Girl implements Person {
 
     @Override

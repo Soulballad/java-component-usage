@@ -1,6 +1,5 @@
 package com.soulballad.usage.p2.passport.adapterv1;
 
-
 import com.soulballad.usage.p2.passport.ResultMsg;
 
 public interface IPassportForThird {

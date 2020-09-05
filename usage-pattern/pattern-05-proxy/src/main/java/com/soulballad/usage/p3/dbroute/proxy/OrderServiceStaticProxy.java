@@ -1,18 +1,12 @@
 package com.soulballad.usage.p3.dbroute.proxy;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import com.soulballad.usage.p3.dbroute.DynamicDataSourceEntity;
 import com.soulballad.usage.p3.dbroute.IOrderService;
 import com.soulballad.usage.p3.dbroute.Order;
 
-/**
- * @author Soulballad
- * @date 2019/3/18/0018 21:16
- * @email soda931vzr@163.com
- * @description
- */
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class OrderServiceStaticProxy implements IOrderService {
 
     private IOrderService orderService;

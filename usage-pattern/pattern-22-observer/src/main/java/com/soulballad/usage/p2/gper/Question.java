@@ -1,8 +1,5 @@
 package com.soulballad.usage.p2.gper;
 
-/**
- * Created by Tom.
- */
 public class Question {
     private String userName;
     private String content;

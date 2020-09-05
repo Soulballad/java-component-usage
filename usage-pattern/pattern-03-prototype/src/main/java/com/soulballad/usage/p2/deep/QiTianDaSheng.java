@@ -7,12 +7,6 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * @author Soulballad
- * @date 2019/3/18/0018 19:49
- * @email soda931vzr@163.com
- * @description
- */
 public class QiTianDaSheng extends Monkey implements Cloneable, Serializable {
 
     public JinGuBang jinGuBang;
@@ -37,7 +31,7 @@ public class QiTianDaSheng extends Monkey implements Cloneable, Serializable {
 
             ByteArrayInputStream bis = new ByteArrayInputStream(bos.toByteArray());
             ObjectInputStream ois = new ObjectInputStream(bis);
-            QiTianDaSheng daSheng = (QiTianDaSheng)ois.readObject();
+            QiTianDaSheng daSheng = (QiTianDaSheng) ois.readObject();
             daSheng.birthday = new Date();
 
             return daSheng;

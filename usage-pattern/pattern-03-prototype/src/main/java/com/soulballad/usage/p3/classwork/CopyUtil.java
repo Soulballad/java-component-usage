@@ -3,12 +3,6 @@ package com.soulballad.usage.p3.classwork;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 
-/**
- * @author Soulballad
- * @date 2019/3/18/0018 20:22
- * @email soda931vzr@163.com
- * @description
- */
 public class CopyUtil {
 
     public static Object copy(Object object) {

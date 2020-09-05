@@ -10,9 +10,8 @@ import java.util.List;
  * 数据库操作类 包含两个构造函数 <br/>
  * <b><font color="red">DataBaseCmd()</font></b> 使用自定义连接池获得连接<br/>
  * <b><font color="red">DataBaseCmd(String datasource)</font></b> 指定 JNDI 的数据源名称
- * 
- * @author tanyongde
  *
+ * @author tanyongde
  */
 public class DataBaseCmd {
 
@@ -23,7 +22,6 @@ public class DataBaseCmd {
 
     /**
      * 默认构造器
-     *
      */
     public DataBaseCmd() {
 
@@ -31,9 +29,8 @@ public class DataBaseCmd {
 
     /**
      * 构造器
-     * 
-     * @param datasource
-     *            指定使用的JNDI查找的数据源名称 Tomcat 的数据源名为 java:comp/env/test
+     *
+     * @param datasource 指定使用的JNDI查找的数据源名称 Tomcat 的数据源名为 java:comp/env/test
      */
     public DataBaseCmd(String datasource) {
         this.datasource = datasource;
@@ -58,13 +55,10 @@ public class DataBaseCmd {
 
     /**
      * 查询表格数据,此方法一般将单表中所有的数据查询出来，如果需要匹配条件查询，则最好在业务逻辑层或者界面层做数据解析或者在查询语句中直接带条件
-     * 
-     * @param sql
-     *            要执行的sql语句或者存储过程的名称
-     * @param cmdtype
-     *            指定sql参数的类型：true为存储过程，false为sql语句
-     * @param values
-     *            指定sql语句中的参数列表
+     *
+     * @param sql     要执行的sql语句或者存储过程的名称
+     * @param cmdtype 指定sql参数的类型：true为存储过程，false为sql语句
+     * @param values  指定sql语句中的参数列表
      * @return 返回更新后的结果集
      * @throws Exception
      */
@@ -89,13 +83,10 @@ public class DataBaseCmd {
 
     /**
      * 实现对数据的的增／删／改
-     * 
-     * @param sql
-     *            要执行的sql语句或者存储过程的名称
-     * @param cmdtype
-     *            指定sql参数的类型：true为存储过程，false为sql语句
-     * @param values
-     *            存储过程或者sql语句中要指定的参数列表，无则为null
+     *
+     * @param sql     要执行的sql语句或者存储过程的名称
+     * @param cmdtype 指定sql参数的类型：true为存储过程，false为sql语句
+     * @param values  存储过程或者sql语句中要指定的参数列表，无则为null
      * @return true执行成功，false执行失败
      * @throws Exception
      */
@@ -165,7 +156,6 @@ public class DataBaseCmd {
 
     /**
      * 关闭所有数据库访问对象
-     *
      */
     public void closeAll() {
         closePstmt();
@@ -175,11 +165,9 @@ public class DataBaseCmd {
 
     /**
      * 设定语句 得参数
-     * 
-     * @param pstmt
-     *            语句集 对象
-     * @param values
-     *            指定 sql 语句中的参数列表
+     *
+     * @param pstmt  语句集 对象
+     * @param values 指定 sql 语句中的参数列表
      * @throws SQLException
      */
     private void setValues(PreparedStatement pstmt, List values) throws SQLException {
@@ -191,9 +179,8 @@ public class DataBaseCmd {
 
     /**
      * (不建议使用的方法)使用 JNDI 的方式获取数据源时应使用此方法 建议在构造器中直接传递参数
-     * 
-     * @param datasource
-     *            数据库连接使用的数据源名称
+     *
+     * @param datasource 数据库连接使用的数据源名称
      * @deprecated
      */
     public void setDatasource(String datasource) {

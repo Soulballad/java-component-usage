@@ -1,8 +1,5 @@
 package com.soulballad.usage.p4.guava;
 
-/**
- * Created by Tom.
- */
 public class Pojo {
     private String name;
 

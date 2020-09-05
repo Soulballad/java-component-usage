@@ -1,11 +1,5 @@
 package com.soulballad.usage.p1.staticproxy.example;
 
-/**
- * @author Soulballad
- * @date 2019/3/18/0018 20:52
- * @email soda931vzr@163.com
- * @description
- */
 public class Son implements Person {
 
     @Override

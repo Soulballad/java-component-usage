@@ -4,11 +4,6 @@ import com.soulballad.usage.p1.simplefactory.ElectricCar;
 import com.soulballad.usage.p1.simplefactory.ICar;
 import com.soulballad.usage.p1.simplefactory.PoliceCar;
 
-/**
- * @author Soulballad
- * @date 2019/3/7/0007 16:18
- * @email soda931vzr@163.com
- */
 public class SimpleFactoryTest {
 
     public static void main(String[] args) {

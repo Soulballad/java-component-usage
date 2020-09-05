@@ -1,14 +1,10 @@
 package com.soulballad.usage.p3.jdbc;
 
-
 import com.soulballad.usage.p3.jdbc.dao.MemberDao;
 import org.junit.Test;
 
 import java.util.List;
 
-/**
- * Created by Tom.
- */
 public class JdbcTemplateTest {
 
     @Test

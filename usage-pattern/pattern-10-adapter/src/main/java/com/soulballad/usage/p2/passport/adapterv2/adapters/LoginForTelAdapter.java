@@ -1,6 +1,5 @@
 package com.soulballad.usage.p2.passport.adapterv2.adapters;
 
-
 import com.soulballad.usage.p2.passport.ResultMsg;
 
 public class LoginForTelAdapter extends AbstractAdapter {

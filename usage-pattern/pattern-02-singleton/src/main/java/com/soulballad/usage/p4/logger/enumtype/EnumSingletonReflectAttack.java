@@ -3,10 +3,7 @@ package com.soulballad.usage.p4.logger.enumtype;
 import java.lang.reflect.Constructor;
 
 /**
- * @author Soulballad
- * @date 2019/3/10/0010 14:35
- * @email soda931vzr@163.com
- * @description 使用反射攻击枚举式单例，发现无法创建对象，因为jdk已经做了防御，所以枚举式单例不存在反射破坏的风险
+ * 使用反射攻击枚举式单例，发现无法创建对象，因为jdk已经做了防御，所以枚举式单例不存在反射破坏的风险
  */
 public class EnumSingletonReflectAttack {
 

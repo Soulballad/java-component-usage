@@ -37,6 +37,6 @@ public class Member {
     @Override
     public String toString() {
         return "Member{" + "loginName='" + loginName + '\'' + ", loginPass='" + loginPass + '\'' + ", roleName='"
-            + roleName + '\'' + '}';
+                + roleName + '\'' + '}';
     }
 }

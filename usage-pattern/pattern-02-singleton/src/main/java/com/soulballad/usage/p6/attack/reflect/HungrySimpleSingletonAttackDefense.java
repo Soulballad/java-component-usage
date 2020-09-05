@@ -3,10 +3,7 @@ package com.soulballad.usage.p6.attack.reflect;
 import java.lang.reflect.Constructor;
 
 /**
- * @author Soulballad
- * @date 2019/3/10/0010 12:06
- * @email soda931vzr@163.com
- * @description 饿汉式防御反射攻击
+ * 饿汉式防御反射攻击
  */
 public class HungrySimpleSingletonAttackDefense {
 
@@ -34,7 +31,7 @@ public class HungrySimpleSingletonAttackDefense {
             Class<HungrySimpleSingletonAttackDefense> attackDefenseClass = HungrySimpleSingletonAttackDefense.class;
 
             Constructor<HungrySimpleSingletonAttackDefense> constructor =
-                attackDefenseClass.getDeclaredConstructor(null);
+                    attackDefenseClass.getDeclaredConstructor(null);
             constructor.setAccessible(true);
             // Field field = attackDefenseClass.getDeclaredField("flag");
             // field.setAccessible(true);

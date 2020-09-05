@@ -1,8 +1,5 @@
 package com.soulballad.usage.p3.mouseevent.handler;
 
-/**
- * Created by Tom.
- */
 public interface MouseEventType {
     String ON_CLICK = "click";
 

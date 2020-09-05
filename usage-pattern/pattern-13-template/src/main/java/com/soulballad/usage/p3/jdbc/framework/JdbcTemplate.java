@@ -8,9 +8,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Tom.
- */
 public abstract class JdbcTemplate {
     private DataSource dataSource;
 

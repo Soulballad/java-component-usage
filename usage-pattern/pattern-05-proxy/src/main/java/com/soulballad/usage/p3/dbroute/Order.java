@@ -1,11 +1,5 @@
 package com.soulballad.usage.p3.dbroute;
 
-/**
- * @author Soulballad
- * @date 2019/3/18/0018 21:05
- * @email soda931vzr@163.com
- * @description
- */
 public class Order {
 
     private String id;

@@ -12,9 +12,6 @@ import java.util.Vector;
 
 /**
  * 数据库链接池管理类
- *
- *
- *
  */
 public final class DBConnectionPool extends Pool {
     private int checkedOut; // 正在使用的连接数
@@ -37,7 +34,7 @@ public final class DBConnectionPool extends Pool {
 
     /**
      * 产生数据连接池
-     * 
+     *
      * @return
      */
     public static synchronized DBConnectionPool getInstance() {
@@ -67,9 +64,8 @@ public final class DBConnectionPool extends Pool {
 
     /**
      * 初始化
-     * 
-     * @throws IOException
      *
+     * @throws IOException
      */
     private void init() throws IOException {
         InputStream is = DBConnectionPool.class.getResourceAsStream(propertiesName);
@@ -145,7 +141,7 @@ public final class DBConnectionPool extends Pool {
         Connection con = null;
         if (freeConnections.size() > 0) { // 还有空闲的连接
             num--;
-            con = (Connection)freeConnections.firstElement();
+            con = (Connection) freeConnections.firstElement();
             freeConnections.removeElementAt(0);
             try {
                 if (con.isClosed()) {
@@ -169,8 +165,7 @@ public final class DBConnectionPool extends Pool {
     /**
      * 获取一个连接,并加上等待时间限制,时间为毫秒
      *
-     * @param timeout
-     *            接受等待时间(以毫秒为单位)
+     * @param timeout 接受等待时间(以毫秒为单位)
      * @return
      */
     public synchronized Connection getConnection(long timeout) {
@@ -198,7 +193,7 @@ public final class DBConnectionPool extends Pool {
             // 使用循环关闭所用连接
             while (allConnections.hasMoreElements()) {
                 // 如果此枚举对象至少还有一个可提供的元素，则返回此枚举的下一个元素
-                Connection con = (Connection)allConnections.nextElement();
+                Connection con = (Connection) allConnections.nextElement();
                 try {
                     con.close();
                     num--;

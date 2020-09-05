@@ -1,6 +1,5 @@
 package com.soulballad.usage.p1.general.interfaceadapter;
 
-
 import org.junit.Test;
 
 public class InterfaceAdapterTest {

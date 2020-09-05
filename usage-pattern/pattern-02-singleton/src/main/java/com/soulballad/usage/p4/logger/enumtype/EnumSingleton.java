@@ -1,10 +1,7 @@
 package com.soulballad.usage.p4.logger.enumtype;
 
 /**
- * @author Soulballad
- * @date 2019/3/10/0010 14:31
- * @email soda931vzr@163.com
- * @description 枚举式单例
+ * 枚举式单例
  */
 public enum EnumSingleton {
     INSTANCE;
