@@ -6,8 +6,8 @@ public class DivInterpreter extends Interpreter {
         super(left, right);
     }
 
+    @Override
     public int interpret() {
         return this.left.interpret() / this.right.interpret();
     }
-
 }

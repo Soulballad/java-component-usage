@@ -7,6 +7,7 @@ public class NumInterpreter implements IArithmeticInterpreter {
         this.value = value;
     }
 
+    @Override
     public int interpret() {
         return this.value;
     }

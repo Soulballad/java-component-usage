@@ -1,9 +1,13 @@
 package com.soulballad.usage.p1.general;
 
+import org.junit.Test;
+
 import java.util.Stack;
 
-public class Test {
-    public static void main(String[] args) {
+public class GeneralInterpreterTest {
+
+    @Test
+    public void test_interpreter() {
         try {
             Context context = new Context();
             // 定义一个语法容器，用于存储一个具体表达式
@@ -18,6 +22,5 @@ public class Test {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }
