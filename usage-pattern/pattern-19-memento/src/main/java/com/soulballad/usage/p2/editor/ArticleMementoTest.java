@@ -1,17 +1,20 @@
 package com.soulballad.usage.p2.editor;
 
-public class Test {
-    public static void main(String[] args) {
+import org.junit.Test;
+
+public class ArticleMementoTest {
+    @Test
+    public void test_articleMemento() {
         DraftsBox draftsBox = new DraftsBox();
 
         Editor editor = new Editor("我是这样手写Spring的，麻雀虽小五脏俱全", "本文节选自《Spring5核心原理与30个类手写实战》一书，Tom著，电子工业出版社出版。",
-            "35576a9ef6fc407aa088eb8280fb1d9d.png");
+                "35576a9ef6fc407aa088eb8280fb1d9d.png");
 
         ArticleMemento articleMemento = editor.saveToMemento();
         draftsBox.addMemento(articleMemento);
 
         System.out.println("标题：" + editor.getTitle() + "\n" + "内容：" + editor.getContent() + "\n" + "插图："
-            + editor.getImgs() + "\n暂存成功");
+                + editor.getImgs() + "\n暂存成功");
 
         System.out.println("完整的信息" + editor);
 
