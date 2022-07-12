@@ -21,16 +21,19 @@ buildscript {
         junitVersion="4.12"
         commonsLangVersion="3.8.1"
         cglibVersion="2.2"
+        curatorVersion="4.0.0"
+        mysqlVersion="5.1.47"
+        dubboVersion="2.7.2"
     }
 
     repositories {
         mavenLocal()
-        maven {url "http://maven.aliyun.com/nexus/content/groups/public/"}
+        maven {url "https://maven.aliyun.com/nexus/content/groups/public/"}
         maven {url "https://maven.aliyun.com/repository/central"}
         maven {url "https://maven.aliyun.com/repository/jcenter"}
         maven {url "https://maven.aliyun.com/repository/google"}
-        maven {url "http://mirrors.163.com/maven/#browse/browse/assets"}
-        maven { url = uri('http://repo.maven.apache.org/maven2') }
+        maven {url "https://mirrors.163.com/maven/#browse/browse/assets"}
+        maven { url = uri('https://repo.maven.apache.org/maven2') }
     }
 
     dependencies {
@@ -92,7 +95,11 @@ subprojects {
                 "org.jboss.resteasy:resteasy-jaxb-provider:${restEasyVersion}",
                 "junit:junit:${junitVersion}",
                 "org.apache.commons:commons-lang3:${commonsLangVersion}",
-                "cglib:cglib-nodep:${cglibVersion}"
+                "cglib:cglib-nodep:${cglibVersion}",
+                "org.apache.curator:curator-framework:${curatorVersion}",
+                "org.apache.curator:curator-recipes:${curatorVersion}",
+                "mysql:mysql-connector-java:${mysqlVersion}",
+                "org.apache.dubbo:dubbo:${dubboVersion}"
         )
     }
 }

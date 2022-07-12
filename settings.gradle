@@ -1,4 +1,7 @@
 rootProject.name = 'java-component-usage'
+rootProject.children.each { project ->
+    project.buildFileName = "${project.name}.gradle"
+}
 include(':usage-mybatis')
 include(':usage-redis')
 include(':usage-dubbo')
@@ -12,7 +15,7 @@ include(':usage-elasticsearch')
 include(':usage-pattern')
 
 // ================================================================ user-pattern ================================================================ //
-// user-pattern modules
+// usage-pattern modules
 include(':usage-pattern:pattern-01-factory')
 include(':usage-pattern:pattern-02-singleton')
 include(':usage-pattern:pattern-03-prototype')
@@ -37,7 +40,7 @@ include(':usage-pattern:pattern-21-interpreter')
 include(':usage-pattern:pattern-22-observer')
 include(':usage-pattern:pattern-23-visitor')
 
-// user-pattern projectDir
+// usage-pattern projectDir
 project(':usage-pattern:pattern-01-factory').projectDir = file('usage-pattern/pattern-01-factory')
 project(':usage-pattern:pattern-02-singleton').projectDir = file('usage-pattern/pattern-02-singleton')
 project(':usage-pattern:pattern-03-prototype').projectDir = file('usage-pattern/pattern-03-prototype')
@@ -63,3 +66,27 @@ project(':usage-pattern:pattern-22-observer').projectDir = file('usage-pattern/p
 project(':usage-pattern:pattern-23-visitor').projectDir = file('usage-pattern/pattern-23-visitor')
 
 // ================================================================ user-pattern ================================================================ //
+
+// ================================================================ user-dubbo ================================================================ //
+// usage-dubbo modules
+include 'usage-dubbo:dubbo-01-spi'
+include 'usage-dubbo:dubbo-02-springboot'
+include 'usage-dubbo:dubbo-01-spi:dubbo-01-spi-arithmetic'
+include 'usage-dubbo:dubbo-01-spi:dubbo-01-spi-ptotocol'
+include 'usage-dubbo:dubbo-01-spi:dubbo-01-spi-operate'
+
+// usage-dubbo projectDir
+project(':usage-dubbo:dubbo-01-spi').projectDir = file('usage-dubbo/dubbo-01-spi')
+project(':usage-dubbo:dubbo-01-spi:dubbo-01-spi-arithmetic').projectDir = file('usage-dubbo/dubbo-01-spi/dubbo-01-spi-arithmetic')
+project(':usage-dubbo:dubbo-01-spi:dubbo-01-spi-ptotocol').projectDir = file('usage-dubbo/dubbo-01-spi/dubbo-01-spi-ptotocol')
+project(':usage-dubbo:dubbo-01-spi:dubbo-01-spi-operate').projectDir = file('usage-dubbo/dubbo-01-spi/dubbo-01-spi-operate')
+project(':usage-dubbo:dubbo-02-springboot').projectDir = file('usage-dubbo/dubbo-02-springboot')
+
+// ================================================================ user-dubbo ================================================================ //
+
+//findProject(':usage-dubbo:dubbo-01-spi')?.name = 'dubbo-01-spi'
+//findProject(':usage-dubbo:dubbo-02-springboot')?.name = 'dubbo-02-springboot'
+//findProject(':usage-dubbo:dubbo-01-spi:dubbo-01-spi-arithmetic')?.name = 'dubbo-01-spi-arithmetic'
+//findProject(':usage-dubbo:dubbo-01-spi:dubbo-01-spi-ptotocol')?.name = 'dubbo-01-spi-ptotocol'
+//findProject(':usage-dubbo:dubbo-01-spi:dubbo-01-spi-operate')?.name = 'dubbo-01-spi-operate'
+
