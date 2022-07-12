@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>com.soulballad.usage</groupId>
+        <artifactId>usage-pattern</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>usage-pattern</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>pattern-01-factory</module>
+        <module>pattern-02-singleton</module>
+        <module>pattern-03-prototype</module>
+        <module>pattern-04-builder</module>
+        <module>pattern-05-proxy</module>
+        <module>pattern-06-facade</module>
+        <module>pattern-07-decorator</module>
+        <module>pattern-08-flyweight</module>
+        <module>pattern-09-composite</module>
+        <module>pattern-10-adapter</module>
+        <module>pattern-11-bridge</module>
+        <module>pattern-12-delegate</module>
+        <module>pattern-13-template</module>
+        <module>pattern-14-strategy</module>
+        <module>pattern-15-chain</module>
+        <module>pattern-16-iterator</module>
+        <module>pattern-17-command</module>
+        <module>pattern-18-state</module>
+        <module>pattern-19-memento</module>
+        <module>pattern-20-mediator</module>
+        <module>pattern-21-interpreter</module>
+        <module>pattern-22-observer</module>
+        <module>pattern-23-visitor</module>
+    </modules>
+</project>

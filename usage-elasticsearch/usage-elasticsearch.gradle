@@ -1,6 +1,0 @@
-description = 'usage-elasticsearch'
-apply plugin: 'org.springframework.boot'
-
-dependencies {
-
-}

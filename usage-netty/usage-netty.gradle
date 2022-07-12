@@ -1,6 +1,0 @@
-description = 'usage-netty'
-apply plugin: 'org.springframework.boot'
-
-dependencies {
-
-}

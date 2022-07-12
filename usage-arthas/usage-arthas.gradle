@@ -1,6 +1,0 @@
-description = 'usage-arthas'
-apply plugin: 'org.springframework.boot'
-
-dependencies {
-    compile("com.soulballad.usage:arthas-demo")
-}

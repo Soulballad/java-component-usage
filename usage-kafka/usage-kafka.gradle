@@ -1,6 +1,0 @@
-description = 'usage-kafka'
-apply plugin: 'org.springframework.boot'
-
-dependencies {
-
-}

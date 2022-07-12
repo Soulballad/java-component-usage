@@ -1,7 +1,0 @@
-description = 'usage-zookeeper'
-apply plugin: 'org.springframework.boot'
-
-dependencies {
-//    implementation group: 'org.apache.curator', name: 'curator-framework', version: '4.0.0'
-//    implementation group: 'org.apache.curator', name: 'curator-recipes', version: '4.0.0'
-}

@@ -1,6 +1,0 @@
-description = 'usage-mybatis'
-apply plugin: 'org.springframework.boot'
-
-dependencies {
-
-}
