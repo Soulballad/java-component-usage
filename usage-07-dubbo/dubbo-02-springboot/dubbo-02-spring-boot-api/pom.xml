@@ -2,25 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <parent>
+        <artifactId>dubbo-02-springboot</artifactId>
         <groupId>com.soulballad.usage</groupId>
-        <artifactId>java-component-usage</artifactId>
         <version>${revision}</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>usage-06-zookeeper</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>dubbo-02-spring-boot-api</artifactId>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
-
-    <modules>
-        <module>zookeeper-01-demo</module>
-        <module>zookeeper-02-selector</module>
-    </modules>
 </project>

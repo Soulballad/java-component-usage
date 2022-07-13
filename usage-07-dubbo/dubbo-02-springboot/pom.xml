@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>com.soulballad.usage</groupId>
         <artifactId>usage-07-dubbo</artifactId>
         <version>${revision}</version>
-<!--        <relativePath>../pom.xml</relativePath>-->
     </parent>
 
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>dubbo-02-springboot</artifactId>
-    <version>${revision}</version>
     <name>dubbo-02-springboot</name>
     <packaging>pom</packaging>
 
     <properties>
-        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
+    <modules>
+        <module>dubbo-02-spring-boot-api</module>
+        <module>dubbo-02-spring-boot-client</module>
+        <module>dubbo-02-spring-boot-provider</module>
+    </modules>
 
     <build>
         <plugins>

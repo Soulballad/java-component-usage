@@ -1,4 +1,4 @@
-package com.soulballad.usage.pattern;
+package com.soulballad.usage.dubbo.spi;
 
 /**
  * @author Soulballad
