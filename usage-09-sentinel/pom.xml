@@ -17,4 +17,9 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
+    <modules>
+        <module>sentinel-01-demo</module>
+        <module>sentinel-02-dubbo</module>
+    </modules>
 </project>

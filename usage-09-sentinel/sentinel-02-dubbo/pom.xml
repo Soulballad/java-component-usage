@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>java-component-usage</artifactId>
+        <artifactId>usage-09-sentinel</artifactId>
         <groupId>com.soulballad.usage</groupId>
         <version>${revision}</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>usage-08-nacos</artifactId>
+    <artifactId>sentinel-02-dubbo</artifactId>
     <packaging>pom</packaging>
 
     <properties>
@@ -19,6 +19,8 @@
     </properties>
 
     <modules>
-        <module>nacos-01-demo</module>
+        <module>sentinel-02-dubbo-api</module>
+        <module>sentinel-02-dubbo-provider</module>
+        <module>sentinel-02-dubbo-web</module>
     </modules>
 </project>
