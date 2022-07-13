@@ -11,6 +11,7 @@
     <name>java-component-usage</name>
 
     <modules>
+        <module>usage-00-spring</module>
         <module>usage-01-pattern</module>
         <module>usage-02-mybatis</module>
         <module>usage-03-arthas</module>
