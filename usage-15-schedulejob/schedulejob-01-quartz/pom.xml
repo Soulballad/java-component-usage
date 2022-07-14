@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>java-component-usage</artifactId>
+        <artifactId>usage-15-schedulejob</artifactId>
         <groupId>com.soulballad.usage</groupId>
         <version>${revision}</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>usage-15-schedulejob</artifactId>
+    <artifactId>schedulejob-01-quartz</artifactId>
     <packaging>pom</packaging>
 
     <properties>
@@ -19,7 +19,8 @@
     </properties>
 
     <modules>
-        <module>schedulejob-01-quartz</module>
-        <module>schedulejob-02-ejob</module>
+        <module>schedulejob-01-quartz-alone</module>
+        <module>schedulejob-01-quartz-spring</module>
+        <module>schedulejob-01-quartz-springboot</module>
     </modules>
 </project>
