@@ -2,15 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <parent>
+        <artifactId>usage-11-rabbitmq</artifactId>
         <groupId>com.soulballad.usage</groupId>
-        <artifactId>java-component-usage</artifactId>
         <version>${revision}</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>usage-11-rabbitmq</artifactId>
+    <artifactId>rabbitmq-05-springboot-project</artifactId>
     <packaging>pom</packaging>
 
     <properties>
@@ -20,10 +19,7 @@
     </properties>
 
     <modules>
-        <module>rabbitmq-01-java</module>
-        <module>rabbitmq-02-spring</module>
-        <module>rabbitmq-03-springboot-demo</module>
-        <module>rabbitmq-04-springboot-amqp</module>
-        <module>rabbitmq-05-springboot-project</module>
+        <module>rabbitmq-05-springboot-consumer</module>
+        <module>rabbitmq-05-springboot-provider</module>
     </modules>
 </project>
