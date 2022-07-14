@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
  * @description
  */
 @Configuration
-@DubboComponentScan("com.gupao.sentinel")
+@DubboComponentScan("com.soulballad.usage.sentinel.dubbo")
 public class DubboConfig {
 
     @Bean

@@ -27,7 +27,7 @@ public class KafkaProducerDemo extends Thread {
         Properties properties = new Properties();
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "172.16.11.128:9092,172.16.11.129:9092,172.16.11.130:9092");
         properties.put(ProducerConfig.CLIENT_ID_CONFIG, "producer-test");
-        properties.put(ProducerConfig.PARTITIONER_CLASS_CONFIG, "com.gupao.kafka.demo.MyPartition");
+        properties.put(ProducerConfig.PARTITIONER_CLASS_CONFIG, "com.soulballad.usage.kafka.MyPartition");
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, IntegerSerializer.class.getName());
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 

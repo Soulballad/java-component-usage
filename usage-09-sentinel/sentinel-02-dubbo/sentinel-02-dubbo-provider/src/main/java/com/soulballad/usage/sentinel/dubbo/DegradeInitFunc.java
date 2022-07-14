@@ -19,7 +19,7 @@ public class DegradeInitFunc implements InitFunc {
     public void init() throws Exception {
         List<DegradeRule> ruleList = new ArrayList<>();
         DegradeRule rule = new DegradeRule();
-        rule.setResource("com.gupao.sentinel.dubbo.api.SentinelService");
+        rule.setResource("com.soulballad.usage.sentinel.dubbo.SentinelService");
         // 1s内处理5个请求
         rule.setGrade(RuleConstant.DEGRADE_GRADE_RT);
         rule.setCount(10); // 请求的平均响应时间（ms）

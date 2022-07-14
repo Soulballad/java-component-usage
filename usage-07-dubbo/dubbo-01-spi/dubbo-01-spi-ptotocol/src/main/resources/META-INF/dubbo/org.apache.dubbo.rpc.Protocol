@@ -1,1 +1,1 @@
-myProtocol=com.gupao.dubbo.spi.protocol.MyProtocol
+myProtocol=com.soulballad.usage.dubbo.spi.MyProtocol
