@@ -16,15 +16,15 @@ public class LockTest {
     private static RedissonClient redissonClient;
 
     static {
-        Config config=new Config();
+        Config config = new Config();
         config.useSingleServer().setAddress("redis://127.0.0.1:6379");
-        redissonClient= Redisson.create(config);
+        redissonClient = Redisson.create(config);
     }
 
     public static void main(String[] args) throws InterruptedException {
-        RLock rLock=redissonClient.getLock("updateAccount");
+        RLock rLock = redissonClient.getLock("updateAccount");
         // 最多等待100秒、上锁10s以后自动解锁
-        if(rLock.tryLock(100,10, TimeUnit.SECONDS)){
+        if (rLock.tryLock(100, 10, TimeUnit.SECONDS)) {
             System.out.println("获取锁成功");
         }
         rLock.unlock();

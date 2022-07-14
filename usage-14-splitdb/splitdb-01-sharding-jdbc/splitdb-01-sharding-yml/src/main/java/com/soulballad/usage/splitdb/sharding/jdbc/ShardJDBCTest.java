@@ -55,24 +55,24 @@ public class ShardJDBCTest {
         ShardingRuleConfiguration shardingRuleConfig = new ShardingRuleConfiguration();
         shardingRuleConfig.getTableRuleConfigs().add(orderTableRuleConfig);
 
-        Map<String,Object> map = new HashMap<>();
+        Map<String, Object> map = new HashMap<>();
 
         // 获取数据源对象
-        DataSource dataSource = ShardingDataSourceFactory.createDataSource(dataSourceMap, shardingRuleConfig,map, new Properties());
+        DataSource dataSource = ShardingDataSourceFactory.createDataSource(dataSourceMap, shardingRuleConfig, map, new Properties());
 
         String sql = "SELECT * from order WHERE user_id=?";
         try (
                 Connection conn = dataSource.getConnection();
                 PreparedStatement preparedStatement = conn.prepareStatement(sql)) {
-                preparedStatement.setInt(1, 2673);
+            preparedStatement.setInt(1, 2673);
             System.out.println();
-                try (ResultSet rs = preparedStatement.executeQuery()) {
-                    while(rs.next()) {
-                        // %2结果，路由到 shard1.order1
-                        System.out.println("order_id---------"+rs.getInt(1));
-                        System.out.println("user_id---------"+rs.getInt(2));
-                        System.out.println("create_time---------"+rs.getTime(3));
-                        System.out.println("total_price---------"+rs.getInt(4));
+            try (ResultSet rs = preparedStatement.executeQuery()) {
+                while (rs.next()) {
+                    // %2结果，路由到 shard1.order1
+                    System.out.println("order_id---------" + rs.getInt(1));
+                    System.out.println("user_id---------" + rs.getInt(2));
+                    System.out.println("create_time---------" + rs.getTime(3));
+                    System.out.println("total_price---------" + rs.getInt(4));
                 }
             }
         }

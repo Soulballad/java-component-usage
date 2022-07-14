@@ -17,7 +17,7 @@ public class HashTest {
         System.out.println(h1);
 
         List<String> list = new ArrayList<String>();
-        list = JedisUtil.getJedisUtil().hmget("h1","a","b","c","d","e");
+        list = JedisUtil.getJedisUtil().hmget("h1", "a", "b", "c", "d", "e");
         System.out.println(list);
     }
 }

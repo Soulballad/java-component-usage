@@ -19,10 +19,10 @@ public class SentinelTest {
 
         //指定使用哨兵部署方式
         config.useSentinelServers()
-        .setMasterName("redis-master")
-        .addSentinelAddress("redis://192.168.8.203:26379")
-        .addSentinelAddress("redis://192.168.8.204:26379")
-        .addSentinelAddress("redis://192.168.8.205:26379");
+                .setMasterName("redis-master")
+                .addSentinelAddress("redis://192.168.8.203:26379")
+                .addSentinelAddress("redis://192.168.8.204:26379")
+                .addSentinelAddress("redis://192.168.8.205:26379");
 
         RedissonClient redisson = Redisson.create(config);
         //首先获取redis中的key-value对象，key不存在没关系

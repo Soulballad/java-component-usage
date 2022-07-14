@@ -1,7 +1,7 @@
 package com.soulballad.usage.rabbitmq.springboot.reliable.receive.consumer;
 
-import com.soulballad.usage.rabbitmq.springboot.util.ResourceUtil;
 import com.rabbitmq.client.Channel;
+import com.soulballad.usage.rabbitmq.springboot.util.ResourceUtil;
 import org.springframework.amqp.core.AcknowledgeMode;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;

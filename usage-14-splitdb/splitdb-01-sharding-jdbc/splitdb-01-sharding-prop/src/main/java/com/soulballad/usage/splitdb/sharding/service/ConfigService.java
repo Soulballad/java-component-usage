@@ -18,9 +18,9 @@ public class ConfigService {
         for (int i = 1; i <= 10; i++) {
             Config config = new Config();
             config.setConfigId(i);
-            config.setParaName("name"+i);
-            config.setParaValue("value"+i);
-            config.setParaDesc("desc"+i);
+            config.setParaName("name" + i);
+            config.setParaValue("value" + i);
+            config.setParaDesc("desc" + i);
             configId++;
             configMapper.insert(config);
         }
@@ -32,7 +32,7 @@ public class ConfigService {
         configMapper.updateByPrimaryKey(config);
     }
 
-    public Config geConfigById(Integer id){
+    public Config geConfigById(Integer id) {
         return configMapper.selectByPrimaryKey(id);
     }
 

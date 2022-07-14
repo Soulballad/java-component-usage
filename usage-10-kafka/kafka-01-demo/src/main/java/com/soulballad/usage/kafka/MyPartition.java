@@ -32,8 +32,10 @@ public class MyPartition implements Partitioner {
     }
 
     @Override
-    public void close() {}
+    public void close() {
+    }
 
     @Override
-    public void configure(Map<String, ?> map) {}
+    public void configure(Map<String, ?> map) {
+    }
 }

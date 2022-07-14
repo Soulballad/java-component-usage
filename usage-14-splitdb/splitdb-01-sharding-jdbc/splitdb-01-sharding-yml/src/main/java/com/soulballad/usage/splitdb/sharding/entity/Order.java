@@ -11,9 +11,9 @@ import java.util.Date;
 @Data
 public class Order {
 
-  private long orderId;
-  private long userId;
-  private Date createTime;
-  private long totalPrice;
+    private long orderId;
+    private long userId;
+    private Date createTime;
+    private long totalPrice;
 
 }

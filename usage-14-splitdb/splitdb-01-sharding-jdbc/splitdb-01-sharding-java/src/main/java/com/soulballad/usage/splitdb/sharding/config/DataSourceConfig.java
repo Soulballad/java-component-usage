@@ -29,7 +29,7 @@ public class DataSourceConfig {
         // 默认的分库策略
         src.setDefaultDatabaseShardingStrategyConfig(new StandardShardingStrategyConfiguration("user_id", DBShardAlgo.class.getName()));
         // 默认的分表策略
-        src.setDefaultTableShardingStrategyConfig(new StandardShardingStrategyConfiguration("user_id", TblPreShardAlgo.class.getName(),TblRangeShardAlgo.class.getName()));
+        src.setDefaultTableShardingStrategyConfig(new StandardShardingStrategyConfiguration("user_id", TblPreShardAlgo.class.getName(), TblRangeShardAlgo.class.getName()));
         // 为user_info表设置分库分表策略、算法
         // src.getTableRuleConfigs().add(getUserTableRuleConfiguration());
         // 数据源名和数据源的映射表
@@ -62,11 +62,11 @@ public class DataSourceConfig {
 
     // 为user_info表设置分库分表策略、算法
     public TableRuleConfiguration getUserTableRuleConfiguration() {
-        TableRuleConfiguration userTableRuleConfig=new TableRuleConfiguration();
+        TableRuleConfiguration userTableRuleConfig = new TableRuleConfiguration();
         userTableRuleConfig.setLogicTable("user_info");
         userTableRuleConfig.setActualDataNodes("ds0.user_info, ds1.user_info");
         userTableRuleConfig.setDatabaseShardingStrategyConfig(new StandardShardingStrategyConfiguration("user_id", DBShardAlgo.class.getName()));
-        userTableRuleConfig.setTableShardingStrategyConfig(new StandardShardingStrategyConfiguration("user_id",TblPreShardAlgo.class.getName(), TblRangeShardAlgo.class.getName()));
+        userTableRuleConfig.setTableShardingStrategyConfig(new StandardShardingStrategyConfiguration("user_id", TblPreShardAlgo.class.getName(), TblRangeShardAlgo.class.getName()));
         return userTableRuleConfig;
     }
 

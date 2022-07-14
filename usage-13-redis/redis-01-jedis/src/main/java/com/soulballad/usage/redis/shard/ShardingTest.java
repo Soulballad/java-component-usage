@@ -27,17 +27,17 @@ public class ShardingTest {
         ShardedJedisPool jedisPool = new ShardedJedisPool(poolConfig, infoList);
 
         ShardedJedis jedis = null;
-        try{
+        try {
             jedis = jedisPool.getResource();
-            for(int i=0; i<100; i++){
-                jedis.set("k"+i, ""+i);
+            for (int i = 0; i < 100; i++) {
+                jedis.set("k" + i, "" + i);
             }
-            for(int i=0; i<100; i++){
-                Client client = jedis.getShard("k"+i).getClient();
-                System.out.println("取到值："+jedis.get("k"+i)+"，"+"当前key位于：" + client.getHost() + ":" + client.getPort());
+            for (int i = 0; i < 100; i++) {
+                Client client = jedis.getShard("k" + i).getClient();
+                System.out.println("取到值：" + jedis.get("k" + i) + "，" + "当前key位于：" + client.getHost() + ":" + client.getPort());
             }
-        }finally{
-            if(jedis!=null) {
+        } finally {
+            if (jedis != null) {
                 jedis.close();
             }
         }

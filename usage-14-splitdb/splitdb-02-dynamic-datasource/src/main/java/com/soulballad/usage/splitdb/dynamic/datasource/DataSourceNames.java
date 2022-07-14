@@ -2,7 +2,6 @@ package com.soulballad.usage.splitdb.dynamic.datasource;
 
 /**
  * 增加多数据源，在此配置
- *
  */
 public interface DataSourceNames {
 

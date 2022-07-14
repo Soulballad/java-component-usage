@@ -18,7 +18,7 @@ public class RateLimiterDemo {
     private static void getAcquire(int index) {
         if (rateLimiter.tryAcquire()) {
             System.out.println(index + "允许进行访问！");
-        }else{
+        } else {
             System.out.println(index + "被限流了！");
         }
     }
@@ -29,7 +29,7 @@ public class RateLimiterDemo {
         Random random = new Random();
         for (int i = 0; i < 20; i++) {
             final int index = i;
-            new Thread(()->{
+            new Thread(() -> {
                 try {
                     latch.await();
                     Thread.sleep(random.nextInt(1000));

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class UserController  {
+public class UserController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 

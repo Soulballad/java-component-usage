@@ -1,7 +1,6 @@
 package com.soulballad.usage.redis.springboot.service;
 
 
-
 import com.soulballad.usage.redis.springboot.entity.User;
 
 import java.util.List;

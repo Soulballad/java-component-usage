@@ -19,15 +19,15 @@ public class ClusterTest {
 
         //指定使用集群部署方式
         config.useClusterServers()
-        // 集群状态扫描间隔时间，单位是毫秒
-        .setScanInterval(2000)
-        //cluster方式至少6个节点(3主3从，3主做sharding，3从用来保证主宕机后可以高可用)
-        .addNodeAddress("redis://192.168.8.207:7291" )
-        .addNodeAddress("redis://192.168.8.207:7292")
-        .addNodeAddress("redis://192.168.8.207:7293")
-        .addNodeAddress("redis://192.168.8.207:7294")
-        .addNodeAddress("redis://192.168.8.207:7295")
-        .addNodeAddress("redis://192.168.8.207:7296");
+                // 集群状态扫描间隔时间，单位是毫秒
+                .setScanInterval(2000)
+                //cluster方式至少6个节点(3主3从，3主做sharding，3从用来保证主宕机后可以高可用)
+                .addNodeAddress("redis://192.168.8.207:7291")
+                .addNodeAddress("redis://192.168.8.207:7292")
+                .addNodeAddress("redis://192.168.8.207:7293")
+                .addNodeAddress("redis://192.168.8.207:7294")
+                .addNodeAddress("redis://192.168.8.207:7295")
+                .addNodeAddress("redis://192.168.8.207:7296");
 
         RedissonClient redisson = Redisson.create(config);
 

@@ -14,11 +14,10 @@ public class OrderItemService {
     @Autowired
     private OrderItemDao orderItemDao;
 
-    public long addOne(OrderItem item){
+    public long addOne(OrderItem item) {
         this.orderItemDao.addOne(item);
         return item.getOrderItemId();
     }
-
 
 
 }

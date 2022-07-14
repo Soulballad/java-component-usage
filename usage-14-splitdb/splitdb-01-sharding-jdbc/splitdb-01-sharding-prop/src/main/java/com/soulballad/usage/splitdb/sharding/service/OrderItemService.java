@@ -22,7 +22,7 @@ public class OrderItemService {
         }
     }
 
-    public OrderItem getOrderItemByItemId(Integer id){
+    public OrderItem getOrderItemByItemId(Integer id) {
         return orderItemMapper.selectByPrimaryKey(id);
     }
 

@@ -17,21 +17,21 @@ import javax.annotation.Resource;
 @SpringBootTest
 @Slf4j
 public class UserShardingTest {
-	@Resource
+    @Resource
     UserService userService;
 
-	@Test
-	public void insert(){
-		userService.insert();
-	}
+    @Test
+    public void insert() {
+        userService.insert();
+    }
 
-	@Test
-	public void select(){
-		UserInfo userInfo1= userService.getUserInfoByUserId(1L);
-		System.out.println("------userInfo1:"+userInfo1);
+    @Test
+    public void select() {
+        UserInfo userInfo1 = userService.getUserInfoByUserId(1L);
+        System.out.println("------userInfo1:" + userInfo1);
 
-        UserInfo userInfo2= userService.getUserInfoByUserId(2L);
-        System.out.println("------userInfo2:"+userInfo2);
-	}
+        UserInfo userInfo2 = userService.getUserInfoByUserId(2L);
+        System.out.println("------userInfo2:" + userInfo2);
+    }
 
 }

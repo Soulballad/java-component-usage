@@ -16,12 +16,11 @@ import java.time.LocalDateTime;
  * <p>
  * 系统用户
  * </p>
- *
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@ApiModel(value="SysUser对象", description="系统用户")
+@ApiModel(value = "SysUser对象", description = "系统用户")
 @ToString
 public class SysUser implements Serializable {
 

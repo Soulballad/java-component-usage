@@ -38,7 +38,7 @@ public class NacosSdkDemo {
 
                 @Override
                 public void receiveConfigInfo(String configInfo) {
-                    System.out.println("configInfo: "+configInfo);
+                    System.out.println("configInfo: " + configInfo);
                 }
             });
         } catch (NacosException e) {

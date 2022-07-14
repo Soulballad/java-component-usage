@@ -26,7 +26,7 @@ public class OrderService {
         }
     }
 
-    public Order getOrderInfoByOrderId(Integer id){
+    public Order getOrderInfoByOrderId(Integer id) {
         return orderMapper.selectByPrimaryKey(id);
     }
 

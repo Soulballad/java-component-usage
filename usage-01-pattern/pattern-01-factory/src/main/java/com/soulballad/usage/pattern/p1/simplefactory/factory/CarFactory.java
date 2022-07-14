@@ -1,8 +1,8 @@
 package com.soulballad.usage.pattern.p1.simplefactory.factory;
 
 import com.soulballad.usage.pattern.p1.simplefactory.ElectricCar;
-import com.soulballad.usage.pattern.p1.simplefactory.ICar;
 import com.soulballad.usage.pattern.p1.simplefactory.GasolineCar;
+import com.soulballad.usage.pattern.p1.simplefactory.ICar;
 
 public class CarFactory {
 

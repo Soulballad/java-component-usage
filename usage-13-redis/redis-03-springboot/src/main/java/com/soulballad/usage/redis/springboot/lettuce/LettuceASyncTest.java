@@ -22,11 +22,11 @@ public class LettuceASyncTest {
         // 获取异步执行命令api
         RedisAsyncCommands<String, String> commands = connection.async();
         // 获取RedisFuture<T>d
-        commands.set("gupao:async","lettuce-async-666");
+        commands.set("gupao:async", "lettuce-async-666");
         RedisFuture<String> future = commands.get("gupao:async");
         try {
             String value = future.get(60, TimeUnit.SECONDS);
-            System.out.println("------"+value);
+            System.out.println("------" + value);
         } catch (InterruptedException | ExecutionException | TimeoutException e) {
             e.printStackTrace();
         }

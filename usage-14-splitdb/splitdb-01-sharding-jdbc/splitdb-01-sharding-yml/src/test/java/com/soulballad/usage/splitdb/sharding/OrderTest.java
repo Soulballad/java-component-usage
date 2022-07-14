@@ -1,7 +1,9 @@
 package com.soulballad.usage.splitdb.sharding;
 
-import com.soulballad.usage.splitdb.sharding.dao.*;
-import com.soulballad.usage.splitdb.sharding.entity.*;
+import com.soulballad.usage.splitdb.sharding.dao.OrderDao;
+import com.soulballad.usage.splitdb.sharding.dao.OrderItemDao;
+import com.soulballad.usage.splitdb.sharding.entity.Order;
+import com.soulballad.usage.splitdb.sharding.entity.OrderItem;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

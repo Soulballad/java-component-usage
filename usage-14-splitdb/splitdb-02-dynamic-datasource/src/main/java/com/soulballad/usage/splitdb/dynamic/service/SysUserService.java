@@ -7,7 +7,6 @@ import com.soulballad.usage.splitdb.dynamic.entity.SysUser;
  * <p>
  * 系统用户 服务类
  * </p>
- *
  */
 public interface SysUserService extends IService<SysUser> {
 

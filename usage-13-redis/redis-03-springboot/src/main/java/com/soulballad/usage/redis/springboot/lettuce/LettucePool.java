@@ -25,7 +25,7 @@ public class LettucePool {
             System.out.println(commands.get("qingshan"));
             commands.zadd("gupao", 100, "Java");
             commands.zadd("gupao", 80, "Python");
-            System.out.println("---------------------"+commands.zcard("gupao"));
+            System.out.println("---------------------" + commands.zcard("gupao"));
         }
         pool.close();
         client.shutdown();

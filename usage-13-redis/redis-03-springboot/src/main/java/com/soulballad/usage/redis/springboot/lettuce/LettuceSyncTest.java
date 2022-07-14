@@ -18,9 +18,9 @@ public class LettuceSyncTest {
         // 获取同步执行命令，默认超时时间为 60s
         RedisCommands<String, String> sync = connection.sync();
         // 发送get请求，获取值
-        sync.set("gupao:sync","lettuce-sync-666" );
+        sync.set("gupao:sync", "lettuce-sync-666");
         String value = sync.get("gupao:sync");
-        System.out.println("------"+value);
+        System.out.println("------" + value);
         //关闭连接
         connection.close();
         //关掉客户端

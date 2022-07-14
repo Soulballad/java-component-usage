@@ -27,7 +27,7 @@ public class TransactionConsumer {
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
-                list.stream().forEach(message->{
+                list.stream().forEach(message -> {
                     System.out.println("消息体: " + new String(message.getBody()) + "->keys: " + message.getKeys());
                 });
 

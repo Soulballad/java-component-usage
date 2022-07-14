@@ -27,11 +27,11 @@ public class UserService {
         }
     }
 
-    public UserInfo getUserInfoByUserId(Long id){
+    public UserInfo getUserInfoByUserId(Long id) {
         return userInfoMapper.selectByPrimaryKey(id);
     }
 
-    public List<UserInfo> selectByRange(Long firstId, Long lastId){
+    public List<UserInfo> selectByRange(Long firstId, Long lastId) {
         return userInfoMapper.selectByRange(firstId, lastId);
     }
 }

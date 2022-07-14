@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @MapperScan(basePackages = "com.soulballad.usage.splitdb.sharding.mapper")
 public class ShardingApp {
-	public static void main(String[] args) {
-		SpringApplication.run(ShardingApp.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ShardingApp.class, args);
+    }
 }

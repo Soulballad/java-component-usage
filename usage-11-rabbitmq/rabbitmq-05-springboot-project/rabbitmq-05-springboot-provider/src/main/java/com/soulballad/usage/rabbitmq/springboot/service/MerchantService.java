@@ -1,7 +1,6 @@
 package com.soulballad.usage.rabbitmq.springboot.service;
 
 
-
 import com.soulballad.usage.rabbitmq.springboot.entity.Merchant;
 
 import java.util.List;
