@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.soulballad.usage.schdeule.ejob.autoconfigure.RegCentreAutoConfiguration,\
+com.soulballad.usage.schdeule.ejob.autoconfigure.JobAutoConfiguration
