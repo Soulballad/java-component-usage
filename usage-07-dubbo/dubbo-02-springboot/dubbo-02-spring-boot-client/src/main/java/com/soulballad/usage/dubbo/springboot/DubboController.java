@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DubboController {
     // dubbo中提供注解
-//    @Reference(loadbalance = "roundrobin", cluster = "failfast", timeout = 1000, mock = "com.gupao.springboot.dubbo.client.MockSayHelloService")
+//    @Reference(loadbalance = "roundrobin", cluster = "failfast", timeout = 1000, mock = "com.soulballad.usage.dubbo.springboot.MockSayHelloService")
     @Reference
     SayHelloService sayHelloService;
 
