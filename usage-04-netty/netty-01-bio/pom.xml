@@ -2,26 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <parent>
+        <artifactId>usage-04-netty</artifactId>
         <groupId>com.soulballad.usage</groupId>
-        <artifactId>java-component-usage</artifactId>
         <version>${revision}</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>usage-04-netty</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>netty-01-bio</artifactId>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
-
-    <modules>
-        <module>netty-01-bio</module>
-        <module>netty-02-demo</module>
-        <module>netty-03-chat</module>
-    </modules>
 </project>

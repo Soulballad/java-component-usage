@@ -14,8 +14,8 @@ CREATE TABLE `sys_user` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='系统用户';
 
 -- ds0数据库：
-INSERT INTO `sys_user` (`user_id`, `username`, `password`, `salt`, `email`, `mobile`, `status`, `create_user_id`, `create_time`) VALUES (1, 'root', 'fjkldsjfkldjskj', 'vmcmvrueiwou', 'root@gupaoedu.com', '13523614785', 2, 3, '2019-10-19 19:19:19');
+INSERT INTO `sys_user` (`user_id`, `username`, `password`, `salt`, `email`, `mobile`, `status`, `create_user_id`, `create_time`) VALUES (1, 'root', 'fjkldsjfkldjskj', 'vmcmvrueiwou', 'root@soulballad.com', '13523614785', 2, 3, '2019-10-19 19:19:19');
 
 
 -- ds1数据库：
-INSERT INTO `sys_user` (`user_id`, `username`, `password`, `salt`, `email`, `mobile`, `status`, `create_user_id`, `create_time`) VALUES (2, 'admin', 'fhdkjhfd', 'iurei6r7er', 'root@gupaoedu.com', '13677778888', 1, 1, '2019-10-10 10:10:10');
+INSERT INTO `sys_user` (`user_id`, `username`, `password`, `salt`, `email`, `mobile`, `status`, `create_user_id`, `create_time`) VALUES (2, 'admin', 'fhdkjhfd', 'iurei6r7er', 'root@soulballad.com', '13677778888', 1, 1, '2019-10-10 10:10:10');
