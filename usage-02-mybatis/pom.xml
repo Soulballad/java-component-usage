@@ -7,7 +7,6 @@
         <groupId>com.soulballad.usage</groupId>
         <artifactId>java-component-usage</artifactId>
         <version>${revision}</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
