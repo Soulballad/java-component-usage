@@ -2,16 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <parent>
+        <artifactId>dubbo-00-custom-rpc-v1</artifactId>
         <groupId>com.soulballad.usage</groupId>
-        <artifactId>java-component-usage</artifactId>
-        <version>${revision}</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>usage-07-dubbo</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>dubbo-00-custom-rpc-v1-client</artifactId>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,9 +17,11 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
-    <modules>
-        <module>dubbo-00-custom-rpc</module>
-        <module>dubbo-01-spi</module>
-        <module>dubbo-02-springboot</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>com.soulballad.usage</groupId>
+            <artifactId>dubbo-00-custom-rpc-v1-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
